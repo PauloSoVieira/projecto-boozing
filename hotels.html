@@ -72,11 +72,15 @@
 
     <div class="main-content">
       <div class="filters">
-        <h3>Price</h3>
-          <label><input type="checkbox" name="price" value="50"> 50€</label>
-          <label><input type="checkbox" name="price" value="100"> 100€</label>
-          <label><input type="checkbox" name="price" value="150"> 150€</label>
-          <label><input type="checkbox" name="price" value="200"> 200€</label>
+        <h3>Price (20€ - 350€)</h3>
+        <label><input type="checkbox" name="price" value="20" /> 20€</label>
+        <label><input type="checkbox" name="price" value="50" /> 50€</label>
+        <label><input type="checkbox" name="price" value="100" /> 100€</label>
+        <label><input type="checkbox" name="price" value="150" /> 150€</label>
+        <label><input type="checkbox" name="price" value="200" /> 200€</label>
+        <label><input type="checkbox" name="price" value="250" /> 250€</label>
+        <label><input type="checkbox" name="price" value="300" /> 300€</label>
+        <label><input type="checkbox" name="price" value="350" /> 350€</label>
 
         <h3>Stars</h3>
         <label><input type="radio" name="stars" /> 1 ★</label>
@@ -94,77 +98,9 @@
       </div>
 
       <div class="hotels">
-        <div class="hotel-card">
-          <img src="./IMG/Radisson.jpeg" alt="Radisson Blu Hotel" />
-          <div class="hotel-details">
-            <h3>Radisson Blu Hotel</h3>
-            <p>4.5/5 ★★★★☆ (1300 reviews)</p>
-            <p class="rating">From: 80€</p>
-            <button class="reserve-button check-availability">Check Availability</button>
-          </div>
-        </div>
-      
-        <div class="hotel-card">
-          <img src="./IMG/Hilton.jpeg" alt="Hilton Garden Inn" />
-          <div class="hotel-details">
-            <h3>Hilton Garden Inn</h3>
-            <p>4.2/5 ★★★☆☆ (900 reviews)</p>
-            <p class="rating">From: 75€</p>
-            <button class="reserve-button check-availability">Check Availability</button>
-          </div>
-        </div>
-      
-        <div class="hotel-card">
-          <img src="./IMG/Marriott.jpeg" alt="Marriott Downtown" />
-          <div class="hotel-details">
-            <h3>Marriott Downtown</h3>
-            <p>4.8/5 ★★★★★ (1500 reviews)</p>
-            <p class="rating">From: 120€</p>
-            <button class="reserve-button check-availability">Check Availability</button>
-          </div>
-        </div>
-      
-        <div class="hotel-card">
-          <img src="./IMG/Holiday.jpeg" alt="Holiday Inn Express" />
-          <div class="hotel-details">
-            <h3>Holiday Inn Express</h3>
-            <p>4.0/5 ★★★★☆ (700 reviews)</p>
-            <p class="rating">From: 65€</p>
-            <button class="reserve-button check-availability">Check Availability</button>
-          </div>
-        </div>
-      
-        <div class="hotel-card">
-          <img src="./IMG/Intercontinental.jpeg" alt="InterContinental Hotel" />
-          <div class="hotel-details">
-            <h3>InterContinental Hotel</h3>
-            <p>4.6/5 ★★★★☆ (1100 reviews)</p>
-            <p class="rating">From: 100€</p>
-            <button class="reserve-button check-availability">Check Availability</button>
-          </div>
-        </div>
-      
-        <div class="hotel-card">
-          <img src="./IMG/Sheraton.jpeg" alt="Sheraton Grand" />
-          <div class="hotel-details">
-            <h3>Sheraton Grand</h3>
-            <p>4.7/5 ★★★★★ (1300 reviews)</p>
-            <p class="rating">From: 110€</p>
-            <button class="reserve-button check-availability">Check Availability</button>
-          </div>
-        </div>
-      
-        <div class="hotel-card">
-          <img src="./IMG/Novotel.jpeg" alt="Novotel City Centre" />
-          <div class="hotel-details">
-            <h3>Novotel City Centre</h3>
-            <p>4.3/5 ★★★☆☆ (850 reviews)</p>
-            <p class="rating">From: 85€</p>
-            <button class="reserve-button check-availability">Check Availability</button>
-          </div>
+        
         </div>
       </div>
-      
     </div>
 
     <!-- Modal -->
@@ -180,6 +116,38 @@
 
     <div id="footer"></div>
     <script>
+    document.addEventListener("DOMContentLoaded", () => {
+  const hotelsContainer = document.querySelector(".hotels");
+
+  // Carregar dados dos hotéis
+  fetch("./hotels.json")
+    .then((response) => response.json())
+    .then((hotels) => {
+      hotelsContainer.innerHTML = hotels
+        .map(
+          (hotel) => `
+            <div class="hotel-card">
+              <img src="${hotel.image}" alt="${hotel.name}" />
+              <div class="hotel-details">
+                <h3>${hotel.name}</h3>
+                <p>${hotel.rating}/5 ${generateStars(hotel.stars)} (${hotel.reviews} reviews)</p>
+                <p class="rating">From: ${hotel.price}€</p>
+                <button class="reserve-button" data-id="${hotel.id}">Check Availability</button>
+              </div>
+            </div>
+          `
+        )
+        .join("");
+    })
+    .catch((error) => console.error("Error loading hotels:", error));
+});
+
+// Função para gerar estrelas
+function generateStars(stars) {
+  return "★".repeat(stars) + "☆".repeat(5 - stars);
+}
+
+
       fetch("./footer.html")
         .then((response) => response.text())
         .then((data) => (document.getElementById("footer").innerHTML = data))
