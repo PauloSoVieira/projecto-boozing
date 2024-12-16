@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Boozing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/more.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+            .catch(error => console.error('Erro ao carregar o footer:', error));
+    </script>
+
+    <div class="terms-container">
+        <h2>Privacy Policy</h2>
+        <p>
+            At Boozing, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy outlines how we collect, use, store, and safeguard your data when you use our website and services. By using Boozing, you agree to the practices described in this policy.
+        </p>
+
+        <h3>Information We Collect</h3>
+        <p>
+            We may collect the following types of information:
+            <ul>
+                <li>Personal Information: Name, email address, phone number, payment details, and other information provided during the booking process.</li>
+                <li>Non-Personal Information: Browser type, device information, IP address, and browsing behavior on our website.</li>
+                <li>Cookies: We use cookies to enhance your experience, analyze website traffic, and personalize content. You can manage your cookie preferences in your browser settings.</li>
+            </ul>
+        </p>
+
+        <h3>How We Use Your Information</h3>
+        <p>
+            The information we collect is used to:
+            <ul>
+                <li>Process and confirm your reservations.</li>
+                <li>Communicate with you about your bookings, updates, and promotional offers.</li>
+                <li>Improve our website functionality and customer experience.</li>
+                <li>Comply with legal obligations and prevent fraudulent activities.</li>
+            </ul>
+        </p>
+
+        <h3>Data Sharing</h3>
+        <p>
+            We may share your information with:
+            <ul>
+                <li>Partner Hotels: To facilitate your reservation.</li>
+                <li>Service Providers: Third-party vendors who assist in payment processing, customer support, and website analytics.</li>
+                <li>Legal Authorities: When required by law or to protect our rights and interests.</li>
+            </ul>
+            We never sell or rent your personal information to third parties.
+        </p>
+
+        <h3>Data Security</h3>
+        <p>
+            We implement industry-standard security measures to protect your data from unauthorized access, alteration, or disclosure. While we strive to safeguard your information, no method of transmission over the internet is entirely secure, and we cannot guarantee absolute security.
+        </p>
+
+        <h3>Your Rights</h3>
+        <p>
+            You have the right to:
+            <ul>
+                <li>Access and review the personal information we hold about you.</li>
+                <li>Request corrections or updates to your data.</li>
+                <li>Withdraw consent for certain data uses, such as marketing communications.</li>
+                <li>Request deletion of your personal information, subject to legal and contractual obligations.</li>
+            </ul>
+            To exercise these rights, contact us at privacy@boozing.com.
+        </p>
+
+        <h3>Data Retention</h3>
+        <p>
+            We retain your personal data only as long as necessary to fulfill the purposes outlined in this policy or as required by law.
+        </p>
+
+        <h3>International Data Transfers</h3>
+        <p>
+            If you access Boozing from outside our primary operational region, your information may be transferred and processed in a jurisdiction with different data protection laws. By using our services, you consent to such transfers.
+        </p>
+
+        <h3>Updates to This Privacy Policy</h3>
+        <p>
+            We may update this Privacy Policy periodically. Changes will be posted on this page with the revised date. We encourage you to review this policy regularly.
+        </p>
+
+        <h3>Contact Us</h3>
+        <p>
+            If you have questions or concerns about this Privacy Policy or how we handle your data, please contact us  contact@boozing.com.
+        </p>
+
+        <p>
+            Thank you for trusting Boozing. Your privacy is our priority.
+        </p>
+
+        
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .catch(error => console.error('Erro ao carregar o footer:', error));
+    </script>
+</body>
+</html>

@@ -1,88 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Boozing</title>
-    <link rel="stylesheet" href="./css/style.css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      rel="stylesheet"
-    />
-   
-  </head>
-  <body>
-    <header>
-      <nav class="home-navbar">
-        <div class="nav-links">
-          <h2>Boozing</h2>
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#Hotels">About</a></li>
-            <li><a href="#About us">Services</a></li>
-            <li><a href="#Contacts">Contact</a></li>
-          </ul>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boozing - Hotel Booking</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+<body>
+    <div id="header"></div>
+    <script>
+        fetch('./header_hotels.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+            .catch(error => console.error('Erro ao carregar o header:', error));
+    </script>
+    <div class="container">
+        <h2>Destinos Populares</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./IMG/porto.jpg" alt="Porto">
+                <h3>Porto</h3>
+            </div>
+            <div class="card">
+                <img src="./IMG/lisboa.jpg" alt="Lisboa">
+                <h3>Lisboa</h3>
+            </div>
+            <div class="card">
+                <img src="./IMG/madeira.jpg" alt="Madeira">
+                <h3>Madeira</h3>
+            </div>
         </div>
-      </nav>
-    </header>
-    <section class="Home-Container">
-      <h2 class="popular-destinations-title">Popular Destinations</h2>
+    </div>
 
-      
-            <div class="destination-card">
-              <img src="./imagens/main.jpg" alt="destination 1" />
-              <p class="card-location">
-                <i class="fa-solid fa-location-dot"></i> Porto
-              </p>
+    <div class="container">
+        <h2>Hoteis Mais Populares</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="./IMG/main.jpg" alt="Hotel">
+                <h3>Radisson Blu Hotel</h3>
+                <p>From: 80€</p>
             </div>
-          </div>
-         
-            <div class="destination-card">
-              <img src="./imagens/main.jpg" alt="destination 2" />
-              <p class="card-location">
-                <i class="fa-solid fa-location-dot"></i> Lisbon
-              </p>
+            <div class="card">
+                <img src="./IMG/main.jpg" alt="Hotel">
+                <h3>Radisson Blu Hotel</h3>
+                <p>From: 80€</p>
             </div>
-          </div>
-         
-            <div class="destination-card">
-              <img src="./imagens/main.jpg" alt="destination 3" />
-              <p class="card-location">
-                <i class="fa-solid fa-location-dot"></i> Faro
-              </p>
+            <div class="card">
+                <img src="./IMG/main.jpg" alt="Hotel">
+                <h3>Radisson Blu Hotel</h3>
+                <p>From: 80€</p>
             </div>
-          </div>
-         
-            <div class="destination-card">
-              <img src="./imagens/main.jpg" alt="destination 4" />
-              <p class="card-location">
-                <i class="fa-solid fa-location-dot"></i> Coimbra
-              </p>
-            </div>
-          </div>
-         
-            <div class="destination-card">
-              <img src="./imagens/main.jpg" alt="destination 5" />
-              <p class="card-location">
-                <i class="fa-solid fa-location-dot"></i> Braga
-              </p>
-            </div>
-          </div>
-         
-            <div class="destination-card">
-              <img src="./imagens/main.jpg" alt="destination 6" />
-              <p class="card-location">
-                <i class="fa-solid fa-location-dot"></i> Sintra
-              </p>
-            </div>
-          </div>
         </div>
+    </div>
 
-       
-      </div>
-    </section>
-    <footer class="Home-Footer"></footer>
-
-    <script src="./javascript/script.js"></script>
-  </body>
+    <div id="footer"></div>
+    <script>
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .catch(error => console.error('Erro ao carregar o footer:', error));
+    </script>
+</body>
 </html>

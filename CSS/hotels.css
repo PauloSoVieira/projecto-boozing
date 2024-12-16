@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding-bottom: 200px;
+}
+
+.main-content {
+    display: flex;
+    margin: 30px auto;
+    max-width: 1200px;
+}
+
+.filters {
+    flex: 1;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+.filters h3 {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.filters label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.filters input[type="checkbox"],
+.filters input[type="radio"] {
+    margin-right: 10px;
+}
+
+.filters button {
+    background: #8b5e34;
+    color: #fff;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.hotels {
+    flex: 3;
+}
+
+.hotel-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-card img {
+    width: 200px;
+    object-fit: cover;
+}
+
+.hotel-details {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hotel-details h3 {
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hotel-details p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.hotel-details .rating {
+    font-weight: 600;
+    color: #8b5e34;
+}
+
+.check-availability {
+    text-align: center;
+    background: #8b5e34;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 10px;
+}
