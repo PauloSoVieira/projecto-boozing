@@ -76,7 +76,7 @@
     "rating": 4.8,
     "stars": 4,
     "reviews": 1500,
-    "price": 120,
+    "price": 320,
     "location": "Madeira",
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
@@ -90,7 +90,7 @@
     "rating": 4.0,
     "stars": 4,
     "reviews": 1100,
-    "price": 100,
+    "price": 202,
     "location": "Lisboa",
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
