@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms and Conditions - Boozing</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./CSS/more.css">
+</head>
+<body>
+    
+    <div id="header"></div>
+    <script>
+        fetch('./header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data)
+            .catch(error => console.error('Erro ao carregar o footer:', error));
+    </script>
+
+    <div class="terms-container">
+        <h2 style="text-align: center;">Terms and Conditions</h2>
+        <p>
+            Welcome to Boozing, your trusted platform for hotel search and reservations. By accessing and using our website, you agree to be bound by the terms and conditions outlined below. Please read them carefully before proceeding with any booking.
+        </p>
+
+        <h3>Purpose of the Service</h3>
+        <p>
+            Boozing serves as an intermediary platform, enabling users to search, compare, and book accommodation services offered by our partner hotels. We do not directly provide accommodation services but facilitate the connection between users and the service providers.
+        </p>
+
+        <h3>User Responsibilities</h3>
+        <ul>
+            <li>Ensure all information provided during the booking process is accurate and complete.</li>
+            <li>Review the specific terms and conditions of the chosen hotel, including cancellation and refund policies, prior to confirming a reservation.</li>
+            <li>Comply with the rules and regulations of the accommodation provider during your stay.</li>
+        </ul>
+
+        <h3>Booking and Payment</h3>
+        <ul>
+            <li>Bookings made via Boozing are subject to availability and confirmation by the hotel.</li>
+            <li>Payment terms, including deposits and fees, will be clearly outlined during the booking process.</li>
+            <li>Any additional charges incurred during the stay are the sole responsibility of the user.</li>
+        </ul>
+
+        <h3>Cancellations and Modifications</h3>
+        <p>
+            Cancellation and modification policies vary by hotel and are displayed at the time of booking. Boozing is not responsible for fees incurred due to cancellations or modifications made by the user or the hotel.
+        </p>
+
+        <h3>Liability</h3>
+        <p>
+            Boozing is not liable for any issues arising from the services provided by partner hotels, including but not limited to service quality, availability, or disputes.
+        </p>
+
+        <h3>Privacy and Data Protection</h3>
+        <p>
+            Your privacy is important to us. For details on how we collect, use, and protect your data, please refer to our <a href="#">Privacy Policy</a>.
+        </p>
+
+        <h3>Changes to Terms and Conditions</h3>
+        <p>
+            Boozing reserves the right to modify these terms and conditions at any time. Continued use of the service constitutes acceptance of the updated terms.
+        </p>
+
+        <h3>Contact Us</h3>
+        <p>
+            If you have any questions about these terms or our services, please contact us at <a href="mailto:contact@boozing.com">contact@boozing.com</a>.
+        </p>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+        fetch('./footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data)
+            .catch(error => console.error('Erro ao carregar o footer:', error));
+    </script>
+</body>
+</html>
