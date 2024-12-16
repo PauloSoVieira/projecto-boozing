@@ -6,7 +6,7 @@
     "rating": 4.5,
     "stars": 4,
     "reviews": 1300,
-    "price": 100,
+    "price": 80,
     "location": "Lisboa",
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
@@ -25,6 +25,76 @@
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 75 },
       { "type": "Suite", "maxPeople": 4, "pricePerNight": 150 }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "InterContinental Hotel",
+    "image": "./IMG/Intercontinental.jpeg",
+    "rating": 4.6,
+    "stars": 4,
+    "reviews": 1100,
+    "price": 100,
+    "location": "Madeira",
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Sheraton Grand",
+    "image": "./IMG/Sheraton.jpeg",
+    "rating": 4.7,
+    "stars": 4,
+    "reviews": 1300,
+    "price": 110,
+    "location": "Lisboa",
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Novotel City Centre",
+    "image": "./IMG/Novotel.jpeg",
+    "rating": 4.3,
+    "stars": 4,
+    "reviews": 850,
+    "price": 85,
+    "location": "Porto",
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Marriott Downtown",
+    "image": "./IMG/Marriott.jpeg",
+    "rating": 4.8,
+    "stars": 4,
+    "reviews": 1500,
+    "price": 120,
+    "location": "Madeira",
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Holiday Inn Express",
+    "image": "./IMG/Holiday.jpeg",
+    "rating": 4.0,
+    "stars": 4,
+    "reviews": 1100,
+    "price": 100,
+    "location": "Lisboa",
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
     ]
   }
 ]
