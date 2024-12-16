@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Radisson Blu Hotel",
+    "image": "./IMG/Radisson.jpeg",
+    "rating": 4.5,
+    "stars": 4,
+    "reviews": 1300,
+    "price": 100,
+    "location": "Lisboa",
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Hilton Garden Inn",
+    "image": "./IMG/Hilton.jpeg",
+    "rating": 4.2,
+    "stars": 3,
+    "reviews": 900,
+    "price": 75,
+    "location": "Porto",
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 75 },
+      { "type": "Suite", "maxPeople": 4, "pricePerNight": 150 }
+    ]
+  }
+]
