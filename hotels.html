@@ -73,7 +73,14 @@
     <div class="main-content">
       <div class="filters">
         <h3>Price (20€ - 350€)</h3>
-        <input type="range" min="20" max="350" step="10" />
+          <label><input type="checkbox" name="price" value="20"> 20€</label>
+          <label><input type="checkbox" name="price" value="50"> 50€</label>
+          <label><input type="checkbox" name="price" value="100"> 100€</label>
+          <label><input type="checkbox" name="price" value="150"> 150€</label>
+          <label><input type="checkbox" name="price" value="200"> 200€</label>
+          <label><input type="checkbox" name="price" value="250"> 250€</label>
+          <label><input type="checkbox" name="price" value="300"> 300€</label>
+          <label><input type="checkbox" name="price" value="350"> 350€</label>
 
         <h3>Stars</h3>
         <label><input type="radio" name="stars" /> 1 ★</label>
@@ -82,20 +89,10 @@
         <label><input type="radio" name="stars" /> 4 ★★★★</label>
         <label><input type="radio" name="stars" /> 5 ★★★★★</label>
 
-        <h3>Review</h3>
-        <label><input type="radio" name="review" /> 1 - 2</label>
-        <label><input type="radio" name="review" /> 3 - 4</label>
-        <label><input type="radio" name="review" /> 4 - 5</label>
-
         <h3>Location</h3>
         <label><input type="checkbox" /> Lisboa</label>
         <label><input type="checkbox" /> Porto</label>
         <label><input type="checkbox" /> Madeira</label>
-
-        <h3>Services</h3>
-        <label><input type="checkbox" /> Breakfast Included</label>
-        <label><input type="checkbox" /> Free Cancellation</label>
-        <label><input type="checkbox" /> WiFi</label>
 
         <button>Apply Filters</button>
       </div>
