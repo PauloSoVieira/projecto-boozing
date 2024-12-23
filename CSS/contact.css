@@ -15,7 +15,7 @@
 
 .contact-form h3 {
     font-size: 1em;
-    color: #8b5e34;
+    color: #6A3217;
     font-weight: bold;
 }
 
@@ -34,9 +34,31 @@ input,
 textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ddd;
+    background-color: #F4F5F8 ;
+    border: 0px ; 
     border-radius: 5px;
-    font-size: 1em;
+    font-size: 0.9em;
+    outline: none;
+}
+
+input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+input:-ms-input-placeholder,textarea:-ms-input-placeholder {
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+input:-moz-placeholder,textarea:-moz-placeholder {
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+input::-moz-placeholder,textarea::-moz-placeholder {
+    color: #888888;
+    font-size: 0.8rem;
 }
 
 textarea {
@@ -44,26 +66,30 @@ textarea {
 }
 
 .btn {
-    background-color: #8b5e34;
+    background-color: #6A3217;
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 1em;
+    font-size: 0.9em;
+    height: 40px;
+    width: 200px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 10px;
+    font-weight: 550;
+    margin-top: 15px;
 }
 
 .btn:hover {
-    background-color: #a66a42;
+    background-color: #6A3217;
 }
 
 .contact-info {
     flex: 1;
 }
 
-.contact-info h4 {
+.contact-info h3 {
     font-size: 1em;
-    color: #8b5e34;
+    color: #6A3217;
     font-weight: bold;
 }
 
@@ -80,16 +106,17 @@ textarea {
 }
 
 .info-item .icon {
-    background-color: #8b5e34;
+    background-color: #6A3217;
     color: white;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 5px;
     font-size: 1.2em;
 }
+
+
 
 .info-item .details strong {
     font-size: 1.1em;
@@ -100,4 +127,17 @@ textarea {
 .info-item .details p {
     color: #777;
     font-size: 0.9em;
+}
+
+.info-item .details a {
+    color: #777;
+    font-size: 0.9em;
+}
+
+.details {
+    display: flex;
+    height: 60px;
+    line-height: 0.8rem;
+    flex-direction: column;
+    justify-content: flex-end;
 }

@@ -1,13 +1,11 @@
 footer {
-  position: fixed; /* Fixa o footer na parte inferior */
-  bottom: 0; /* Coloca o footer no rodapé */
+
   left: 0;
   width: 100%; /* Faz com que o footer ocupe toda a largura */
   background-color: #333;
   color: #fff;
   padding: 10px 5px; /* Reduz o espaço interno */
-  font-family: Arial, sans-serif;
-  z-index: 1000; /* Garante que o footer esteja acima de outros elementos */
+  font-family: 'Montserrat';
 }
 
 .footer-container {
@@ -17,48 +15,56 @@ footer {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-.footer-logo h1 {
-  font-size: 1.2rem; /* Reduz o tamanho do título */
-  font-weight: bold;
-  margin: 0;
+.footer-logo img {
+  width: 180px;
 }
 
 .footer-links {
   display: flex;
-  gap: 20px; /* Reduz o espaçamento entre colunas */
+  gap: 60px; /* Reduz o espaçamento entre colunas */
   flex: 1;
-  justify-content: center;
+  margin-left: 130px;
 }
 
 .footer-links .column {
   display: flex;
   flex-direction: column;
+  align-items: baseline;
 }
 
-.footer-links h3 {
+.footer-links title {
   margin-bottom: 5px; /* Reduz o espaço abaixo dos títulos */
-  font-size: 0.9rem; /* Diminui o tamanho da fonte */
-  color: #ccc;
+  font-size: 1rem; /* Diminui o tamanho da fonte */
+  color: #fff;
 }
 
 .footer-links a {
-  color: #aaa;
+  color: #757575;
   text-decoration: none;
   margin-bottom: 3px; /* Reduz o espaço entre os links */
   font-size: 0.8rem; /* Diminui o tamanho da fonte dos links */
+  transition: color 0.3s ease;
+}
+
+.footer-links p {
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px; /* Reduz o espaço entre os links */
 }
 
 .footer-links a:hover {
-  color: #fff;
+  color: #8b5e34;
 }
 
 .footer-social {
   display: flex;
-  align-items: center;
+  align-items: right;
   gap: 10px; /* Espaçamento entre os ícones */
-  justify-content: center; /* Centraliza os ícones */
+  justify-content: right; /* Centraliza os ícones */
 }
 
 .footer-social a {
@@ -67,30 +73,17 @@ footer {
   justify-content: center;
   width: 40px; /* Tamanho do botão para os ícones */
   height: 40px;
-  background-color: #444; /* Fundo para os ícones */
-  border-radius: 50%; /* Torna os botões circulares */
   color: white; /* Cor dos ícones */
-  font-size: 20px; /* Tamanho dos ícones */
-  text-decoration: none; /* Remove sublinhado */
-  transition: background-color 0.3s ease;
+  font-size: 25px; /* Tamanho dos ícones */
+  text-decoration: none !important;  /* Remove sublinhado */
+  transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
-  background-color: #8b5e34; /* Cor de fundo ao passar o mouse */
+  color: #8b5e34; /* Cor de fundo ao passar o mouse */
 }
 
-#facebook {
-  background-color: #3b5998; /* Cor padrão do Facebook */
-}
-
-#facebook:hover {
-  background-color: #2d4373; /* Cor ao passar o mouse */
-}
-
-#instagram {
-  background-color: #e1306c; /* Cor padrão do Instagram */
-}
-
-#instagram:hover {
-  background-color: #c13584; /* Cor ao passar o mouse */
+footer {
+  position: absolute;
+  bottom: 0;
 }
