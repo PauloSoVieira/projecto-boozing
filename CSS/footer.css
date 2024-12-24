@@ -1,11 +1,9 @@
 footer {
-
-  left: 0;
   width: 100%; /* Faz com que o footer ocupe toda a largura */
   background-color: #333;
   color: #fff;
   padding: 10px 5px; /* Reduz o espaço interno */
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .footer-container {
@@ -63,27 +61,34 @@ footer {
 .footer-social {
   display: flex;
   align-items: right;
-  gap: 10px; /* Espaçamento entre os ícones */
-  justify-content: right; /* Centraliza os ícones */
+  gap: 10px;
+  justify-content: right;
 }
 
 .footer-social a {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px; /* Tamanho do botão para os ícones */
+  width: 40px;
   height: 40px;
-  color: white; /* Cor dos ícones */
-  font-size: 25px; /* Tamanho dos ícones */
-  text-decoration: none !important;  /* Remove sublinhado */
+  color: white;
+  font-size: 25px;
+  text-decoration: none !important;
   transition: color 0.3s ease;
 }
 
 .footer-social a:hover {
-  color: #8b5e34; /* Cor de fundo ao passar o mouse */
+  color: #8b5e34;
 }
 
-footer {
-  position: absolute;
-  bottom: 0;
+#facebook:hover {
+  color: #3b5998;
+}
+
+#instagram:hover {
+  color: #e1306c;
+}
+
+#x-twitter:hover {
+  color: #1da1f2;
 }
