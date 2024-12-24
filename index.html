@@ -1,65 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boozing - Hotel Booking</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="./CSS/index.css">
-</head>
-<body>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/index.css" />
+  </head>
+  <body>
     <div id="header"></div>
     <script>
-        fetch('./header_hotels.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data)
-            .catch(error => console.error('Erro ao carregar o header:', error));
+      fetch("./header_hotels.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+
+          document
+            .getElementById("hamburger-menu")
+            .addEventListener("click", () => {
+              const nav = document.getElementById("nav");
+              nav.classList.toggle("open");
+            });
+        })
+        .catch((error) => console.error("Erro ao carregar o header:", error));
     </script>
     <div class="container">
-        <h2>Destinos Populares</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="./IMG/porto.jpg" alt="Porto">
-                <h3>Porto</h3>
-            </div>
-            <div class="card">
-                <img src="./IMG/lisboa.jpg" alt="Lisboa">
-                <h3>Lisboa</h3>
-            </div>
-            <div class="card">
-                <img src="./IMG/madeira.jpg" alt="Madeira">
-                <h3>Madeira</h3>
-            </div>
+      <h2>Destinos Populares</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./IMG/porto.jpg" alt="Porto" />
+          <h3>Porto</h3>
         </div>
+        <div class="card">
+          <img src="./IMG/lisboa.jpg" alt="Lisboa" />
+          <h3>Lisboa</h3>
+        </div>
+        <div class="card">
+          <img src="./IMG/madeira.jpg" alt="Madeira" />
+          <h3>Madeira</h3>
+        </div>
+      </div>
     </div>
 
     <div class="container">
-        <h2>Hoteis Mais Populares</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="./IMG/main.jpg" alt="Hotel">
-                <h3>Radisson Blu Hotel</h3>
-                <p>From: 80€</p>
-            </div>
-            <div class="card">
-                <img src="./IMG/main.jpg" alt="Hotel">
-                <h3>Radisson Blu Hotel</h3>
-                <p>From: 80€</p>
-            </div>
-            <div class="card">
-                <img src="./IMG/main.jpg" alt="Hotel">
-                <h3>Radisson Blu Hotel</h3>
-                <p>From: 80€</p>
-            </div>
+      <h2>Hoteis Mais Populares</h2>
+      <div class="card-container">
+        <div class="card">
+          <img src="./IMG/main.jpg" alt="Hotel" />
+          <h3>Radisson Blu Hotel</h3>
+          <p>From: 80€</p>
         </div>
+        <div class="card">
+          <img src="./IMG/main.jpg" alt="Hotel" />
+          <h3>Radisson Blu Hotel</h3>
+          <p>From: 80€</p>
+        </div>
+        <div class="card">
+          <img src="./IMG/main.jpg" alt="Hotel" />
+          <h3>Radisson Blu Hotel</h3>
+          <p>From: 80€</p>
+        </div>
+      </div>
     </div>
 
     <div id="footer"></div>
     <script>
-        fetch('./footer.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('footer').innerHTML = data)
-            .catch(error => console.error('Erro ao carregar o footer:', error));
+      fetch("./footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data))
+        .catch((error) => console.error("Erro ao carregar o footer:", error));
     </script>
-</body>
+  </body>
 </html>

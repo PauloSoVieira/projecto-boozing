@@ -92,3 +92,27 @@ footer {
 #x-twitter:hover {
   color: #1da1f2;
 }
+@media (max-width: 390px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    margin-top: 20px;
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .footer-social {
+    margin-bottom: 20px;
+  }
+
+  .footer-logo img {
+    width: 120px;
+  }
+
+  .footer-links a {
+    font-size: 0.75rem;
+  }
+}
