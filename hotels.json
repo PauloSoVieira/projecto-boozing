@@ -3,98 +3,200 @@
     "id": 1,
     "name": "Radisson Blu Hotel",
     "image": "./IMG/Radisson.jpeg",
+    "images": [
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg"
+    ],
     "rating": 4.5,
     "stars": 4,
     "reviews": 1300,
     "price": 80,
-    "location": "Lisboa",
+    "location": "Porto",
+    "amenities": [
+      "🅿️ Private Park",
+      "📶 Free WiFi",
+      "🍳 Breakfast Included",
+      "🍴 Restaurant Available",
+      "🏊 Swimming Pool",
+      "🚭 No Smoking Rooms",
+      "🐾 Pets Allowed"
+    ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 120 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 190 },
+      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 220 }
     ]
   },
   {
     "id": 2,
     "name": "Hilton Garden Inn",
     "image": "./IMG/Hilton.jpeg",
+    "images": [
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg"
+    ],
     "rating": 4.2,
     "stars": 3,
     "reviews": 900,
     "price": 75,
     "location": "Porto",
+    "amenities": ["🅿️ Private Park", "📶 Free WiFi", "🐾 Pets Allowed"],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 75 },
-      { "type": "Suite", "maxPeople": 4, "pricePerNight": 150 }
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 110 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 160 },
+      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 190 }
     ]
   },
   {
     "id": 3,
     "name": "InterContinental Hotel",
     "image": "./IMG/Intercontinental.jpeg",
+    "images": [
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg"
+    ],
     "rating": 4.6,
-    "stars": 4,
+    "stars": 2,
     "reviews": 1100,
     "price": 100,
     "location": "Madeira",
+    "amenities": [
+      "📶 Free WiFi",
+      "🍳 Breakfast Included",
+      "🍴 Restaurant Available",
+      "🚭 No Smoking Rooms",
+      "🐾 Pets Allowed"
+    ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 130 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 200 },
+      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 240 }
     ]
   },
   {
     "id": 4,
     "name": "Sheraton Grand",
     "image": "./IMG/Sheraton.jpeg",
+    "images": [
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg"
+    ],
     "rating": 4.7,
-    "stars": 4,
+    "stars": 1,
     "reviews": 1300,
     "price": 110,
     "location": "Lisboa",
+    "amenities": [
+      "🅿️ Private Park",
+      "🍳 Breakfast Included",
+      "🍴 Restaurant Available",
+      "🏊 Swimming Pool",
+      "🐾 Pets Allowed"
+    ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 90 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 130 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 200 },
+      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 230 }
     ]
   },
   {
     "id": 5,
     "name": "Novotel City Centre",
     "image": "./IMG/Novotel.jpeg",
+    "images": [
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg"
+    ],
     "rating": 4.3,
-    "stars": 4,
+    "stars": 5,
     "reviews": 850,
     "price": 85,
     "location": "Porto",
+    "amenities": [
+      "🅿️ Private Park",
+      "📶 Free WiFi",
+      "🍳 Breakfast Included",
+      "🚭 No Smoking Rooms",
+      "🐾 Pets Allowed"
+    ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 115 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 170 },
+      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 210 }
     ]
   },
   {
     "id": 6,
     "name": "Marriott Downtown",
     "image": "./IMG/Marriott.jpeg",
+    "images": [
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg"
+    ],
     "rating": 4.8,
     "stars": 4,
     "reviews": 1500,
     "price": 320,
     "location": "Madeira",
+    "amenities": [
+      "🅿️ Private Park",
+      "📶 Free WiFi",
+      "🍴 Restaurant Available",
+      "🏊 Swimming Pool",
+      "🚭 No Smoking Rooms",
+      "🐾 Pets Allowed"
+    ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 120 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 180 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 280 },
+      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 350 }
     ]
   },
   {
     "id": 7,
     "name": "Holiday Inn Express",
     "image": "./IMG/Holiday.jpeg",
+    "images": [
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg",
+      "./IMG/Radisson.jpeg"
+    ],
     "rating": 4.0,
     "stars": 4,
     "reviews": 1100,
     "price": 202,
     "location": "Lisboa",
+    "amenities": [
+      "🅿️ Private Park",
+      "📶 Free WiFi",
+      "🍳 Breakfast Included",
+      "🍴 Restaurant Available",
+      "🏊 Swimming Pool"
+    ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 120 }
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 90 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 130 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 210 },
+      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 260 }
     ]
   }
 ]

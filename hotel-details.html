@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel Details</title>
+    <link rel="stylesheet" href="./CSS/hotel-details.css" />
+    <link rel="stylesheet" href="./CSS/hotels.css" />
+  </head>
+  <body>
+    <div id="header"></div>
+    <div id="reservation-modal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Reservar Quarto</h2>
+        <form id="reservation-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="contact">Contato:</label>
+          <input type="tel" id="contact" name="contact" required />
+
+          <button type="submit">Confirmar Reserva</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      fetch("./header_hotels.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("header").innerHTML = data))
+        .catch((error) => console.error("Erro ao carregar o header:", error));
+    </script>
+
+    <div class="hotel-details-container">
+      <div class="hotel-overview">
+        <div class="hotel-images">
+          <img
+            id="hotel-main-image"
+            src=""
+            alt="Hotel Main"
+            class="main-image"
+          />
+          <div class="image-grid" id="hotel-image-grid"></div>
+        </div>
+        <div class="hotel-info">
+          <h1 id="hotel-name"></h1>
+          <p id="hotel-location" class="location">
+            <span class="icon">📍</span>
+          </p>
+          <p id="hotel-rating" class="rating"></p>
+          <div class="amenities" id="hotel-amenities"></div>
+        </div>
+      </div>
+
+      <div class="room-list" id="room-list"></div>
+    </div>
+
+    <div id="footer"></div>
+    <script>
+      fetch("./footer.html")
+        .then((response) => response.text())
+        .then((data) => (document.getElementById("footer").innerHTML = data))
+        .catch((error) => console.error("Erro ao carregar o footer:", error));
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const hotelId = new URLSearchParams(window.location.search).get("id");
+        if (hotelId) {
+          fetch("./hotels.json")
+            .then((response) => response.json())
+            .then((hotels) => {
+              const hotel = hotels.find((h) => h.id === Number(hotelId));
+              if (hotel) {
+                document.getElementById("hotel-name").textContent = hotel.name;
+                document.getElementById("hotel-location").textContent =
+                  hotel.location;
+                document.getElementById(
+                  "hotel-rating"
+                ).textContent = `${hotel.rating} ★`;
+                document.getElementById("hotel-main-image").src = hotel.image;
+
+                const imageGrid = document.getElementById("hotel-image-grid");
+                hotel.images.forEach((image) => {
+                  const img = document.createElement("img");
+                  img.src = image;
+                  img.alt = "Hotel Image";
+                  imageGrid.appendChild(img);
+                });
+
+                const amenities = document.getElementById("hotel-amenities");
+                amenities.innerHTML = hotel.amenities
+                  .map(
+                    (amenity) => `<span class="amenity-icon">${amenity}</span>`
+                  )
+                  .join("");
+
+                const roomList = document.getElementById("room-list");
+                roomList.innerHTML = hotel.rooms
+                  .map(
+                    (room, index) => `
+                  <div class="room" data-index="${index}">
+                    <div class="room-info">
+                      <h2>${room.type} Room</h2>
+                      <ul>
+                        <li>Max People: ${room.maxPeople}</li>
+                        <li>Breakfast Included</li>
+                        <li>Air Conditioning</li>
+                        <li>No Smoking Rooms</li>
+                      </ul>
+                    </div>
+                    <div class="room-price">
+                      <span>${room.pricePerNight}€</span>
+                      <button class="reserve-btn" data-index="${index}">Reservar</button>
+                    </div>
+                  </div>
+                `
+                  )
+                  .join("");
+
+                const modal = document.getElementById("reservation-modal");
+                const closeBtn = document.getElementsByClassName("close")[0];
+
+                let currentRoomIndex = null;
+                document.querySelectorAll(".reserve-btn").forEach((button) => {
+                  button.addEventListener("click", (event) => {
+                    event.preventDefault();
+                    currentRoomIndex = event.target.getAttribute("data-index");
+                    modal.style.display = "block";
+                    console.log("Room Index:", currentRoomIndex);
+                  });
+                });
+
+                closeBtn.addEventListener("click", () => {
+                  modal.style.display = "none";
+                });
+
+                window.addEventListener("click", (event) => {
+                  if (event.target === modal) {
+                    modal.style.display = "none";
+                  }
+                });
+
+                const form = document.getElementById("reservation-form");
+                form.addEventListener("submit", (event) => {
+                  event.preventDefault();
+
+                  const name = document.getElementById("name").value;
+                  const email = document.getElementById("email").value;
+                  const contact = document.getElementById("contact").value;
+
+                  alert(
+                    `Reserva Confirmada! Nome: ${name}, E-mail: ${email}, Contato: ${contact}`
+                  );
+
+                  modal.style.display = "none";
+
+                  const roomElement = document.querySelector(
+                    `.room[data-index="${currentRoomIndex}"]`
+                  );
+                  if (roomElement) {
+                    const reserveButton =
+                      roomElement.querySelector(".reserve-btn");
+                    reserveButton.textContent = "Reservado";
+                    reserveButton.style.backgroundColor = "red";
+                    reserveButton.disabled = true;
+                  } else {
+                    console.error(
+                      "Quarto não encontrado para atualizar o botão"
+                    );
+                  }
+                });
+              }
+            })
+            .catch((error) =>
+              console.error("Erro ao carregar o JSON dos hotéis:", error)
+            );
+        }
+      });
+    </script>
+  </body>
+</html>
