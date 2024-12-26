@@ -22,84 +22,93 @@
 
     <div class="main-content">
       <div class="filters">
-        <h3>Price (1€ - 350€)</h3>
-        <label
-          ><input type="checkbox" name="price" value="1-100" /> 1€ - 100€</label
-        >
-        <label
-          ><input type="checkbox" name="price" value="101-200" /> 101€ -
-          200€</label
-        >
-        <label
-          ><input type="checkbox" name="price" value="201-300" /> 201€ -
-          300€</label
-        >
-        <label
-          ><input type="checkbox" name="price" value="301-350" /> 301€ -
-          350€</label
-        >
+        <h3>Filters</h3>
+        <details>
+          <summary>Price (1€ - 350€)</summary>
+          <label
+            ><input type="checkbox" name="price" value="1-100" /> 1€ -
+            100€</label
+          >
+          <label
+            ><input type="checkbox" name="price" value="101-200" /> 101€ -
+            200€</label
+          >
+          <label
+            ><input type="checkbox" name="price" value="201-300" /> 201€ -
+            300€</label
+          >
+          <label
+            ><input type="checkbox" name="price" value="301-350" /> 301€ -
+            350€</label
+          >
+        </details>
 
-        <h3>Stars</h3>
-        <label
-          ><input
-            type="checkbox"
-            name="stars"
-            value="1"
-            class="star-checkbox"
-          />
-          1 ★</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="stars"
-            value="2"
-            class="star-checkbox"
-          />
-          2 ★★</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="stars"
-            value="3"
-            class="star-checkbox"
-          />
-          3 ★★★</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="stars"
-            value="4"
-            class="star-checkbox"
-          />
-          4 ★★★★</label
-        >
-        <label
-          ><input
-            type="checkbox"
-            name="stars"
-            value="5"
-            class="star-checkbox"
-          />
-          5 ★★★★★</label
-        >
+        <details>
+          <summary>Stars</summary>
+          <label
+            ><input
+              type="checkbox"
+              name="stars"
+              value="1"
+              class="star-checkbox"
+            />
+            1 ★</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="stars"
+              value="2"
+              class="star-checkbox"
+            />
+            2 ★★</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="stars"
+              value="3"
+              class="star-checkbox"
+            />
+            3 ★★★</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="stars"
+              value="4"
+              class="star-checkbox"
+            />
+            4 ★★★★</label
+          >
+          <label
+            ><input
+              type="checkbox"
+              name="stars"
+              value="5"
+              class="star-checkbox"
+            />
+            5 ★★★★★</label
+          >
+        </details>
 
-        <h3>Location</h3>
-        <label
-          ><input type="checkbox" name="location" value="Lisboa" />
-          Lisboa</label
-        >
-        <label
-          ><input type="checkbox" name="location" value="Porto" /> Porto</label
-        >
-        <label
-          ><input type="checkbox" name="location" value="Madeira" />
-          Madeira</label
-        >
+        <details>
+          <summary>Location</summary>
+          <label
+            ><input type="checkbox" name="location" value="Lisboa" />
+            Lisboa</label
+          >
+          <label
+            ><input type="checkbox" name="location" value="Porto" />
+            Porto</label
+          >
+          <label
+            ><input type="checkbox" name="location" value="Madeira" />
+            Madeira</label
+          >
+        </details>
 
-        <button>Apply Filters</button>
+        <!--  <button>Apply Filters</button>-->
       </div>
 
       <div class="hotels"></div>
