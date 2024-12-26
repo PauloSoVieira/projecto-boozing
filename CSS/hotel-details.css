@@ -251,3 +251,78 @@
     padding: 10px 15px;
   }
 }
+
+@media (max-width: 390px) {
+  .hotel-details-container {
+    margin: 10px;
+    padding: 10px;
+    box-shadow: none;
+  }
+
+  .hotel-overview {
+    flex-direction: column;
+  }
+
+  .hotel-images {
+    margin-bottom: 15px;
+  }
+
+  .hotel-info h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .hotel-info p {
+    font-size: 14px;
+  }
+
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 10px;
+  }
+
+  .image-grid img {
+    height: 120px;
+  }
+
+  .room {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .room-info h2 {
+    font-size: 18px;
+  }
+
+  .room-price span {
+    font-size: 20px;
+  }
+
+  .reserve-btn {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  #reservation-form label {
+    font-size: 14px;
+  }
+
+  #reservation-form input {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  #reservation-form button {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .close {
+    font-size: 25px;
+  }
+}

@@ -1,143 +1,210 @@
 .contact-section {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 20px;
 }
 
 .contact-container {
-    display: flex;
-    gap: 50px;
+  display: flex;
+  gap: 50px;
 }
 
 .contact-form {
-    flex: 1;
+  flex: 1;
 }
 
 .contact-form h3 {
-    font-size: 1em;
-    color: #6A3217;
-    font-weight: bold;
+  font-size: 1em;
+  color: #6a3217;
+  font-weight: bold;
 }
 
 .contact-form h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .form-group {
-    display: flex;
-    gap: 15px;
-    margin-bottom: 15px;
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
 }
 
 input,
 textarea {
-    width: 100%;
-    padding: 10px;
-    background-color: #F4F5F8 ;
-    border: 0px ; 
-    border-radius: 5px;
-    font-size: 0.9em;
-    outline: none;
+  width: 100%;
+  padding: 10px;
+  background-color: #f4f5f8;
+  border: 0px;
+  border-radius: 5px;
+  font-size: 0.9em;
+  outline: none;
 }
 
-input::-webkit-input-placeholder,textarea::-webkit-input-placeholder {
-    color: #888888;
-    font-size: 0.8rem;
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #888888;
+  font-size: 0.8rem;
 }
 
-input:-ms-input-placeholder,textarea:-ms-input-placeholder {
-    color: #888888;
-    font-size: 0.8rem;
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #888888;
+  font-size: 0.8rem;
 }
 
-input:-moz-placeholder,textarea:-moz-placeholder {
-    color: #888888;
-    font-size: 0.8rem;
+input:-moz-placeholder,
+textarea:-moz-placeholder {
+  color: #888888;
+  font-size: 0.8rem;
 }
 
-input::-moz-placeholder,textarea::-moz-placeholder {
-    color: #888888;
-    font-size: 0.8rem;
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #888888;
+  font-size: 0.8rem;
 }
 
 textarea {
-    resize: none;
+  resize: none;
 }
 
 .btn {
-    background-color: #6A3217;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 0.9em;
-    height: 40px;
-    width: 200px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-weight: 550;
-    margin-top: 15px;
+  background-color: #6a3217;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 0.9em;
+  height: 40px;
+  width: 200px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: 550;
+  margin-top: 15px;
 }
 
 .btn:hover {
-    background-color: #6A3217;
+  background-color: #6a3217;
 }
 
 .contact-info {
-    flex: 1;
+  flex: 1;
 }
 
 .contact-info h3 {
-    font-size: 1em;
-    color: #6A3217;
-    font-weight: bold;
+  font-size: 1em;
+  color: #6a3217;
+  font-weight: bold;
 }
 
 .contact-info h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
+  font-size: 2em;
+  margin-bottom: 20px;
 }
 
 .info-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .info-item .icon {
-    background-color: #6A3217;
-    color: white;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2em;
+  background-color: #6a3217;
+  color: white;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
 }
 
-
-
 .info-item .details strong {
-    font-size: 1.1em;
-    margin-bottom: 5px;
-    display: block;
+  font-size: 1.1em;
+  margin-bottom: 5px;
+  display: block;
 }
 
 .info-item .details p {
-    color: #777;
-    font-size: 0.9em;
+  color: #777;
+  font-size: 0.9em;
 }
 
 .info-item .details a {
-    color: #777;
-    font-size: 0.9em;
+  color: #777;
+  font-size: 0.9em;
 }
 
 .details {
-    display: flex;
-    height: 60px;
-    line-height: 0.8rem;
-    flex-direction: column;
-    justify-content: flex-end;
+  display: flex;
+  height: 60px;
+  line-height: 0.8rem;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+/* Base styles remain unchanged */
+/* Add this at the end of your CSS */
+
+@media (max-width: 390px) {
+  body {
+    margin: 20px; /* Reduce margin for smaller screens */
+  }
+
+  .contact-section {
+    padding: 10px;
+    margin: 20px auto;
+  }
+
+  .contact-container {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Reduce spacing between elements */
+  }
+
+  .contact-form h2,
+  .contact-info h2 {
+    font-size: 1.5em; /* Adjust heading size */
+  }
+
+  .form-group {
+    flex-direction: column; /* Stack inputs vertically */
+    gap: 10px; /* Reduce gap between inputs */
+  }
+
+  input,
+  textarea {
+    font-size: 0.8em; /* Slightly smaller font */
+    padding: 8px; /* Adjust padding */
+  }
+
+  .btn {
+    font-size: 0.8em; /* Smaller button text */
+    width: 100%; /* Button stretches to full width */
+    height: 35px; /* Adjust height */
+  }
+
+  .contact-info .info-item {
+    gap: 10px; /* Reduce gap between icon and text */
+  }
+
+  .info-item .icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1em; /* Smaller icons */
+  }
+
+  .info-item .details strong {
+    font-size: 1em; /* Adjust text size */
+  }
+
+  .info-item .details p,
+  .info-item .details a {
+    font-size: 0.8em; /* Smaller paragraph and link text */
+  }
+
+  .details {
+    height: auto; /* Allow text wrapping */
+    line-height: 1.2rem; /* Adjust line height */
+  }
 }

@@ -11,11 +11,20 @@
 <body>
     <div id="header"></div>
     <script>
-        fetch('./header.html')
-            .then(response => response.text())
-            .then(data => document.getElementById('header').innerHTML = data)
-            .catch(error => console.error('Erro ao carregar o footer:', error));
-    </script>
+        fetch("./header_hotels.html")
+          .then((response) => response.text())
+          .then((data) => {
+            document.getElementById("header").innerHTML = data;
+  
+            document
+              .getElementById("hamburger-menu")
+              .addEventListener("click", () => {
+                const nav = document.getElementById("nav");
+                nav.classList.toggle("open");
+              });
+          })
+          .catch((error) => console.error("Erro ao carregar o header:", error));
+      </script>
 
     <div class="terms-container">
         <h2 style="text-align: center;">About Us</h2>

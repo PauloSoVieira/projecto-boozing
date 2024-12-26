@@ -30,7 +30,16 @@
     <script>
       fetch("./header_hotels.html")
         .then((response) => response.text())
-        .then((data) => (document.getElementById("header").innerHTML = data))
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+
+          document
+            .getElementById("hamburger-menu")
+            .addEventListener("click", () => {
+              const nav = document.getElementById("nav");
+              nav.classList.toggle("open");
+            });
+        })
         .catch((error) => console.error("Erro ao carregar o header:", error));
     </script>
 
