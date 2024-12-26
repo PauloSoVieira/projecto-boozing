@@ -144,12 +144,9 @@ textarea {
   justify-content: flex-end;
 }
 
-/* Base styles remain unchanged */
-/* Add this at the end of your CSS */
-
 @media (max-width: 390px) {
   body {
-    margin: 20px; /* Reduce margin for smaller screens */
+    margin: 20px;
   }
 
   .contact-section {
@@ -158,53 +155,53 @@ textarea {
   }
 
   .contact-container {
-    flex-direction: column; /* Stack elements vertically */
-    gap: 20px; /* Reduce spacing between elements */
+    flex-direction: column;
+    gap: 20px;
   }
 
   .contact-form h2,
   .contact-info h2 {
-    font-size: 1.5em; /* Adjust heading size */
+    font-size: 1.5em;
   }
 
   .form-group {
-    flex-direction: column; /* Stack inputs vertically */
-    gap: 10px; /* Reduce gap between inputs */
+    flex-direction: column;
+    gap: 10px;
   }
 
   input,
   textarea {
-    font-size: 0.8em; /* Slightly smaller font */
-    padding: 8px; /* Adjust padding */
+    font-size: 0.8em;
+    padding: 8px;
   }
 
   .btn {
-    font-size: 0.8em; /* Smaller button text */
-    width: 100%; /* Button stretches to full width */
-    height: 35px; /* Adjust height */
+    font-size: 0.8em;
+    width: 100%;
+    height: 35px;
   }
 
   .contact-info .info-item {
-    gap: 10px; /* Reduce gap between icon and text */
+    gap: 10px;
   }
 
   .info-item .icon {
     width: 50px;
     height: 50px;
-    font-size: 1em; /* Smaller icons */
+    font-size: 1em;
   }
 
   .info-item .details strong {
-    font-size: 1em; /* Adjust text size */
+    font-size: 1em;
   }
 
   .info-item .details p,
   .info-item .details a {
-    font-size: 0.8em; /* Smaller paragraph and link text */
+    font-size: 0.8em;
   }
 
   .details {
-    height: auto; /* Allow text wrapping */
-    line-height: 1.2rem; /* Adjust line height */
+    height: auto;
+    line-height: 1.2rem;
   }
 }

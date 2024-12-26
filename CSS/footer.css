@@ -1,8 +1,8 @@
 footer {
-  width: 100%; /* Faz com que o footer ocupe toda a largura */
+  width: 100%;
   background-color: #333;
   color: #fff;
-  padding: 10px 5px; /* Reduz o espaço interno */
+  padding: 10px 5px;
   font-family: "Montserrat";
 }
 
@@ -23,7 +23,7 @@ footer {
 
 .footer-links {
   display: flex;
-  gap: 60px; /* Reduz o espaçamento entre colunas */
+  gap: 60px;
   flex: 1;
   margin-left: 130px;
 }
@@ -35,23 +35,23 @@ footer {
 }
 
 .footer-links title {
-  margin-bottom: 5px; /* Reduz o espaço abaixo dos títulos */
-  font-size: 1rem; /* Diminui o tamanho da fonte */
+  margin-bottom: 5px;
+  font-size: 1rem;
   color: #fff;
 }
 
 .footer-links a {
   color: #757575;
   text-decoration: none;
-  margin-bottom: 3px; /* Reduz o espaço entre os links */
-  font-size: 0.8rem; /* Diminui o tamanho da fonte dos links */
+  margin-bottom: 3px;
+  font-size: 0.8rem;
   transition: color 0.3s ease;
 }
 
 .footer-links p {
   color: #fff;
   font-size: 1rem;
-  margin-bottom: 10px; /* Reduz o espaço entre os links */
+  margin-bottom: 10px;
 }
 
 .footer-links a:hover {
