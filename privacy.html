@@ -10,7 +10,7 @@
 <body>
     <div id="header"></div>
     <script>
-        fetch("./header_hotels.html")
+        fetch("./header_simple.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header").innerHTML = data;
@@ -77,7 +77,7 @@
                 <li>Withdraw consent for certain data uses, such as marketing communications.</li>
                 <li>Request deletion of your personal information, subject to legal and contractual obligations.</li>
             </ul>
-            To exercise these rights, contact us at privacy@boozing.com.
+            To exercise these rights, contact us at <a href="mailto:privacy@boozing.com">privacy@boozing.com</a>.
         </p>
 
         <h3>Data Retention</h3>
@@ -104,7 +104,6 @@
             Thank you for trusting Boozing. Your privacy is our priority.
         </p>
 
-        
     </div>
 
     <div id="footer"></div>

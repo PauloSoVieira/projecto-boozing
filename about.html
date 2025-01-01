@@ -11,7 +11,7 @@
 <body>
     <div id="header"></div>
     <script>
-        fetch("./header_hotels.html")
+        fetch("./header_simple.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header").innerHTML = data;
@@ -74,7 +74,7 @@
         </p>
 
         <p>
-            For inquiries or assistance, feel free to contact us at contact@boozing.com. We’re here to help!
+            For inquiries or assistance, feel free to contact us at <a href="mailto:contact@boozing.com">contact@boozing.com</a>. We’re here to help!
         </p>
 
         

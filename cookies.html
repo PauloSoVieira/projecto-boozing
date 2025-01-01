@@ -10,7 +10,7 @@
 <body>
     <div id="header"></div>
     <script>
-        fetch("./header_hotels.html")
+        fetch("./header_simple.html")
           .then((response) => response.text())
           .then((data) => {
             document.getElementById("header").innerHTML = data;
@@ -84,7 +84,7 @@
 
         <h3>Contact Us</h3>
         <p>
-            If you have questions or concerns about our use of cookies, please contact us at privacy@boozing.com.
+            If you have questions or concerns about our use of cookies, please contact us at <a href="mailto:privacy@boozing.com">privacy@boozing.com</a>.
         </p>
 
         <p>

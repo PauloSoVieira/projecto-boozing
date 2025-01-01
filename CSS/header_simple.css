@@ -1,0 +1,101 @@
+.main-header{
+  position: absolute;
+  background-image: url("../IMG/main.jpg");
+  background-size: cover;
+  background-position: top;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.nav {
+  display: flex;
+  gap: 520px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hotels-header img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.logo{
+  width: 100%;
+}
+
+.logo img {
+  width: 180px;
+}
+
+.menu{
+  display: flex;
+  gap: 70px
+}
+
+.menu a {
+  display: inline;
+  padding: 0; 
+  margin: 0;
+  color: #757575;
+  width: 73px;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: #8b5e34;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.hamburger .bar {
+  height: 4px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 4px;
+}
+
+@media (max-width: 390px) {
+  .main-header nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .main-header nav.open {
+    display: flex;
+  }
+
+  .main-header nav a {
+    margin: 0 10px;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  .main-header nav a:hover {
+    background-color: #8b5e34;
+    color: #fff;
+  }
+}
