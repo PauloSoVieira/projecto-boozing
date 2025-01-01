@@ -8,7 +8,13 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./carrossel/style.css" />
   </head>
   <body>
     <div id="header"></div>
@@ -27,23 +33,72 @@
         })
         .catch((error) => console.error("Erro ao carregar o header:", error));
     </script>
+
     <div class="container">
       <h2>Destinos Populares</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="./IMG/porto.jpg" alt="Porto" />
-          <h3>Porto</h3>
-        </div>
-        <div class="card">
-          <img src="./IMG/lisboa.jpg" alt="Lisboa" />
-          <h3>Lisboa</h3>
-        </div>
-        <div class="card">
-          <img src="./IMG/madeira.jpg" alt="Madeira" />
-          <h3>Madeira</h3>
-        </div>
-      </div>
+      <div id="carousel-container"></div>
     </div>
+
+    <script>
+      fetch("./carrossel/carousel.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("carousel-container").innerHTML = data;
+
+          setTimeout(() => {
+            const track = document.querySelector(".carousel-track");
+            const prevBtn = document.querySelector(".prev-btn");
+            const nextBtn = document.querySelector(".next-btn");
+            const itemsToShow = 3;
+            const totalItems = document.querySelectorAll(".city-card").length;
+            const itemWidth =
+              document.querySelector(".city-card").offsetWidth + 30;
+            let currentIndex = 0;
+
+            function updateCarousel() {
+              track.style.transform = `translateX(-${
+                currentIndex * itemsToShow * itemWidth
+              }px)`;
+            }
+
+            function handleNext() {
+              currentIndex++;
+              if ((currentIndex + 1) * itemsToShow >= totalItems) {
+                currentIndex = 0;
+                track.style.transition = "none";
+                updateCarousel();
+                track.offsetHeight;
+                track.style.transition = "transform 0.5s ease-in-out";
+              }
+              updateCarousel();
+            }
+
+            function handlePrev() {
+              currentIndex--;
+              if (currentIndex < 0) {
+                currentIndex = Math.floor(
+                  (totalItems - itemsToShow) / itemsToShow
+                );
+                track.style.transition = "none";
+                updateCarousel();
+                track.offsetHeight;
+                track.style.transition = "transform 0.5s ease-in-out";
+              }
+              updateCarousel();
+            }
+
+            prevBtn.addEventListener("click", handlePrev);
+            nextBtn.addEventListener("click", handleNext);
+
+            setInterval(handleNext, 5000);
+
+            updateCarousel();
+          }, 100);
+        })
+        .catch((error) =>
+          console.error("Erro ao carregar o carrossel:", error)
+        );
+    </script>
 
     <div class="container">
       <h2>Hoteis Mais Populares</h2>
@@ -65,7 +120,6 @@
         </div>
       </div>
     </div>
-
     <div id="footer"></div>
     <script>
       fetch("./footer.html")
