@@ -14,14 +14,15 @@
     "reviews": 1300,
     "price": 80,
     "location": "Porto",
+    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
-      "🅿️ Private Park",
-      "📶 Free WiFi",
-      "🍳 Breakfast Included",
-      "🍴 Restaurant Available",
-      "🏊 Swimming Pool",
-      "🚭 No Smoking Rooms",
-      "🐾 Pets Allowed"
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
@@ -45,7 +46,16 @@
     "reviews": 900,
     "price": 75,
     "location": "Porto",
-    "amenities": ["🅿️ Private Park", "📶 Free WiFi", "🐾 Pets Allowed"],
+    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+    ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 75 },
       { "type": "Superior", "maxPeople": 3, "pricePerNight": 110 },
@@ -68,12 +78,18 @@
     "reviews": 1100,
     "price": 100,
     "location": "Madeira",
+    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
-      "📶 Free WiFi",
-      "🍳 Breakfast Included",
-      "🍴 Restaurant Available",
-      "🚭 No Smoking Rooms",
-      "🐾 Pets Allowed"
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
@@ -97,12 +113,15 @@
     "reviews": 1300,
     "price": 110,
     "location": "Lisboa",
+    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
-      "🅿️ Private Park",
-      "🍳 Breakfast Included",
-      "🍴 Restaurant Available",
-      "🏊 Swimming Pool",
-      "🐾 Pets Allowed"
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 90 },
@@ -126,12 +145,15 @@
     "reviews": 850,
     "price": 85,
     "location": "Porto",
+    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
-      "🅿️ Private Park",
-      "📶 Free WiFi",
-      "🍳 Breakfast Included",
-      "🚭 No Smoking Rooms",
-      "🐾 Pets Allowed"
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
@@ -155,13 +177,15 @@
     "reviews": 1500,
     "price": 320,
     "location": "Madeira",
+    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
-      "🅿️ Private Park",
-      "📶 Free WiFi",
-      "🍴 Restaurant Available",
-      "🏊 Swimming Pool",
-      "🚭 No Smoking Rooms",
-      "🐾 Pets Allowed"
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 120 },
@@ -185,12 +209,15 @@
     "reviews": 1100,
     "price": 202,
     "location": "Lisboa",
+    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
-      "🅿️ Private Park",
-      "📶 Free WiFi",
-      "🍳 Breakfast Included",
-      "🍴 Restaurant Available",
-      "🏊 Swimming Pool"
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 90 },
