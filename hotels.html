@@ -140,23 +140,41 @@
             .then((response) => response.json())
             .then((hotels) => {
               hotelsContainer.innerHTML = hotels
-                .map(
-                  (hotel) => `
-              <div class="hotel-card">
-                <img src="${hotel.image}" alt="${hotel.name}" />
-                <div class="hotel-details">
-                  <div class="hotel-name"><h3>${hotel.name}</h3><div class="stars">${generateStars(hotel.stars)}</div></div> 
-                  <p>${hotel.rating}/5 (${
-                    hotel.reviews
-                  } reviews)</p>
-                  <p class="rating">From: ${hotel.price}€</p>
-                  <a href="./hotel-details.html?id=${
-                    hotel.id
-                  }" class="check-availability">Check Availability</a>
-                </div>
-              </div>
-            `
-                )
+                .map((hotel) => {
+                  const minPricePerNight = hotel.rooms.reduce(
+                    (min, room) => (room.pricePerNight < min ? room.pricePerNight : min),
+                    Infinity
+                  );
+
+                  return `
+                    <div class="hotel-card">
+                      <img src="${hotel.image}" alt="${hotel.name}" />
+                      <div class="hotel-details">
+                        <div class="hotel-info">
+                          <div class="hotel-name">
+                            <h3>${hotel.name}</h3>
+                            <div class="stars">${generateStars(hotel.stars)}</div>
+                          </div> 
+                          <div class="hotel-rating">
+                            <div class="rating">${hotel.rating} / 5</div>
+                            <p>${hotel.reviews} reviews</p> 
+                          </div>   
+                          <div class="hotel-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>${hotel.location}</p>
+                          </div>   
+                        </div>  
+                        <div class="hotel-price">
+                          <div class="from-price">
+                            <a class="price-from">From: </a> 
+                            <p class="hotelprice">${minPricePerNight}€</p>
+                          </div>
+                          <a href="./hotel-details.html?id=${hotel.id}" class="check-availability">Check Availability <i class="fa-solid fa-angle-right"></i></a>
+                        </div> 
+                      </div>
+                    </div>
+                  `;
+                })
                 .join("");
             })
             .catch((error) => console.error("Error loading hotels:", error));
@@ -203,19 +221,41 @@
               });
 
               hotelsContainer.innerHTML = filteredHotels
-                .map(
-                  (hotel) => `
-            <div class="hotel-card">
-              <img src="${hotel.image}" alt="${hotel.name}" />
-              <div class="hotel-details">
-                  <div class="hotel-name"><h3>${hotel.name}</h3><div class="stars">${generateStars(hotel.stars)}</div></div> 
-                <p>${hotel.rating}</p>/5 (${hotel.reviews} reviews)</p>
-                <p class="rating">From: ${hotel.price}€</p>
-                <a href="./hotel-details.html?id=${hotel.id}" class="check-availability">Check Availability</a>
-              </div>
-            </div>
-          `
-                )
+              .map((hotel) => {
+                  const minPricePerNight = hotel.rooms.reduce(
+                    (min, room) => (room.pricePerNight < min ? room.pricePerNight : min),
+                    Infinity
+                  );
+
+                  return `
+                    <div class="hotel-card">
+                      <img src="${hotel.image}" alt="${hotel.name}" />
+                      <div class="hotel-details">
+                        <div class="hotel-info">
+                          <div class="hotel-name">
+                            <h3>${hotel.name}</h3>
+                            <div class="stars">${generateStars(hotel.stars)}</div>
+                          </div> 
+                          <div class="hotel-rating">
+                            <div class="rating">${hotel.rating} / 5</div>
+                            <p>${hotel.reviews} reviews</p> 
+                          </div>   
+                          <div class="hotel-location">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>${hotel.location}</p>
+                          </div>   
+                        </div>  
+                        <div class="hotel-price">
+                          <div class="from-price">
+                            <a class="price-from">From: </a> 
+                            <p class="hotelprice">${minPricePerNight}€</p>
+                          </div>
+                          <a href="./hotel-details.html?id=${hotel.id}" class="check-availability">Check Availability <i class="fa-solid fa-angle-right"></i></a>
+                        </div> 
+                      </div>
+                    </div>
+                  `;
+                })
                 .join("");
             })
             .catch((error) => console.error("Error loading hotels:", error));
