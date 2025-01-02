@@ -145,8 +145,8 @@
               <div class="hotel-card">
                 <img src="${hotel.image}" alt="${hotel.name}" />
                 <div class="hotel-details">
-                  <h3>${hotel.name}</h3>
-                  <p>${hotel.rating}/5 ${generateStars(hotel.stars)} (${
+                  <div class="hotel-name"><h3>${hotel.name}</h3><div class="stars">${generateStars(hotel.stars)}</div></div> 
+                  <p>${hotel.rating}/5 (${
                     hotel.reviews
                   } reviews)</p>
                   <p class="rating">From: ${hotel.price}€</p>
@@ -164,7 +164,7 @@
 
         // Função para gerar estrelas
         function generateStars(stars) {
-          return "★".repeat(stars) + "☆".repeat(5 - stars);
+          return "<i class=\"fa-solid fa-star\"></i>".repeat(stars) + "<i class=\"fa-regular fa-star\"></i>".repeat(5-stars);
         }
 
         function updateHotels() {
@@ -208,14 +208,10 @@
             <div class="hotel-card">
               <img src="${hotel.image}" alt="${hotel.name}" />
               <div class="hotel-details">
-                <h3>${hotel.name}</h3>
-                <p>${hotel.rating}/5 ${generateStars(hotel.stars)} (${
-                    hotel.reviews
-                  } reviews)</p>
+                  <div class="hotel-name"><h3>${hotel.name}</h3><div class="stars">${generateStars(hotel.stars)}</div></div> 
+                <p>${hotel.rating}</p>/5 (${hotel.reviews} reviews)</p>
                 <p class="rating">From: ${hotel.price}€</p>
-                <a href="./hotel-details.html?id=${
-                  hotel.id
-                }" class="check-availability">Check Availability</a>
+                <a href="./hotel-details.html?id=${hotel.id}" class="check-availability">Check Availability</a>
               </div>
             </div>
           `
