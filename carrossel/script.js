@@ -4,7 +4,7 @@ const nextBtn = document.querySelector(".next-btn");
 
 const itemsToShow = 3;
 const totalItems = document.querySelectorAll(".city-card").length;
-const itemWidth = document.querySelector(".city-card").offsetWidth + 50; // Inclui a margem
+const itemWidth = document.querySelector(".city-card").offsetWidth + 20; // Inclui a margem
 let currentIndex = 0;
 
 function updateCarousel() {
