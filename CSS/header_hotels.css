@@ -1,12 +1,11 @@
 .hotels-header {
-  margin-top: 80px;
   position: relative;
   color: white;
 }
 
 .hotels-header img {
   width: 100%;
-  height: 200px;
+  height: 48vh;
   object-fit: cover;
 }
 
