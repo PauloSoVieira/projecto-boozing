@@ -4,8 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boozing - Hotel Booking</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"> 
+ <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="./CSS/index.css" />
+    <link rel="stylesheet" href="./carrossel/style.css" />
   </head>
   <body>
     <div id="header"></div>
@@ -24,43 +33,111 @@
         })
         .catch((error) => console.error("Erro ao carregar o header:", error));
     </script>
-    <div class="container">
-      <h2>Destinos Populares</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="./IMG/porto.jpg" alt="Porto" />
-          <h3>Porto</h3>
-        </div>
-        <div class="card">
-          <img src="./IMG/lisboa.jpg" alt="Lisboa" />
-          <h3>Lisboa</h3>
-        </div>
-        <div class="card">
-          <img src="./IMG/madeira.jpg" alt="Madeira" />
-          <h3>Madeira</h3>
-        </div>
-      </div>
-    </div>
 
     <div class="container">
-      <h2>Hoteis Mais Populares</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="./IMG/main.jpg" alt="Hotel" />
-          <h3>Radisson Blu Hotel</h3>
-          <p>From: 80€</p>
-        </div>
-        <div class="card">
-          <img src="./IMG/main.jpg" alt="Hotel" />
-          <h3>Radisson Blu Hotel</h3>
-          <p>From: 80€</p>
-        </div>
-        <div class="card">
-          <img src="./IMG/main.jpg" alt="Hotel" />
-          <h3>Radisson Blu Hotel</h3>
-          <p>From: 80€</p>
+      <h2>Destinos Populares</h2>
+      <div id="carousel-container"></div>
+    </div>
+
+    <script>
+      fetch("./carrossel/carousel.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("carousel-container").innerHTML = data;
+
+          setTimeout(() => {
+            const track = document.querySelector(".carousel-track");
+            const prevBtn = document.querySelector(".prev-btn");
+            const nextBtn = document.querySelector(".next-btn");
+            const itemsToShow = 3;
+            const totalItems = document.querySelectorAll(".city-card").length;
+            const itemWidth =
+              document.querySelector(".city-card").offsetWidth + 50;
+            let currentIndex = 0;
+
+            function updateCarousel() {
+              track.style.transform = `translateX(-${
+                currentIndex * itemsToShow * itemWidth
+              }px)`;
+            }
+
+            function handleNext() {
+              currentIndex++;
+              if ((currentIndex + 1) * itemsToShow >= totalItems) {
+                currentIndex = 0;
+                track.style.transition = "none";
+                updateCarousel();
+                track.offsetHeight;
+                track.style.transition = "transform 0.5s ease-in-out";
+              }
+              updateCarousel();
+            }
+
+            function handlePrev() {
+              currentIndex--;
+              if (currentIndex < 0) {
+                currentIndex = Math.floor(
+                  (totalItems - itemsToShow) / itemsToShow
+                );
+                track.style.transition = "none";
+                updateCarousel();
+                track.offsetHeight;
+                track.style.transition = "transform 0.5s ease-in-out";
+              }
+              updateCarousel();
+            }
+
+            prevBtn.addEventListener("click", handlePrev);
+            nextBtn.addEventListener("click", handleNext);
+
+            //    setInterval(handleNext, 5000);
+
+            updateCarousel();
+          }, 100);
+        })
+        .catch((error) =>
+          console.error("Erro ao carregar o carrossel:", error)
+        );
+    </script>
+    <h2>Hotéis Mais Populares</h2>
+    <div class="popular-hotels-cont">
+      <button class="prev-hotels-btn">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </button>
+      <div class="hotels-carousel">
+        <div class="hotels-carousel-track-wrapper">
+          <div class="hotels-carousel-track">
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Radisson Blu Hotel" />
+              <h3>Radisson Blu Hotel</h3>
+              <p>From: 80€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Marriott Hotel" />
+              <h3>Marriott Hotel</h3>
+              <p>From: 120€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Hilton Hotel" />
+              <h3>Hilton Hotel</h3>
+              <p>From: 100€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Ibis Hotel" />
+              <h3>Ibis Hotel</h3>
+              <p>From: 70€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Sheraton Hotel" />
+              <h3>Sheraton Hotel</h3>
+              <p>From: 150€</p>
+            </div>
+          </div>
         </div>
       </div>
+      <button class="next-hotels-btn">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
     </div>
 
     <div id="footer"></div>
@@ -69,6 +146,45 @@
         .then((response) => response.text())
         .then((data) => (document.getElementById("footer").innerHTML = data))
         .catch((error) => console.error("Erro ao carregar o footer:", error));
+    </script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const trackHotels = document.querySelector(".hotels-carousel-track");
+        const prevHotelsBtn = document.querySelector(".prev-hotels-btn");
+        const nextHotelsBtn = document.querySelector(".next-hotels-btn");
+        const hotelCards = document.querySelectorAll(".hotel-card");
+        const itemsToShowHotels = 3;
+        const itemWidthHotels = hotelCards[0].offsetWidth + 20;
+        let currentIndexHotels = 0;
+
+        function updateCarouselHotels() {
+          trackHotels.style.transform = `translateX(-${
+            currentIndexHotels * itemWidthHotels
+          }px)`;
+
+          prevHotelsBtn.disabled = currentIndexHotels === 0;
+          nextHotelsBtn.disabled =
+            currentIndexHotels >=
+            Math.ceil(hotelCards.length / itemsToShowHotels) - 1;
+        }
+
+        nextHotelsBtn.addEventListener("click", () => {
+          if (currentIndexHotels < hotelCards.length - itemsToShowHotels) {
+            currentIndexHotels++;
+            updateCarouselHotels();
+          }
+        });
+
+        prevHotelsBtn.addEventListener("click", () => {
+          if (currentIndexHotels > 0) {
+            currentIndexHotels--;
+            updateCarouselHotels();
+          }
+        });
+
+        updateCarouselHotels();
+      });
     </script>
   </body>
 </html>
