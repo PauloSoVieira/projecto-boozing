@@ -142,7 +142,16 @@
                     (min, room) => (room.pricePerNight < min ? room.pricePerNight : min),
                     Infinity
                   );
-
+        let ratingColor = "";
+        
+        if (hotel.rating >= 0 && hotel.rating < 2.5) {
+          ratingColor = "#FFBDBD";
+        } else if (hotel.rating >= 2.5 && hotel.rating < 4) {
+          ratingColor = "#FFF6BD";
+        } else if (hotel.rating >= 4 && hotel.rating <= 5) {
+          ratingColor = "#CBFFBD";
+        }
+              
                   return `
                     <div class="hotel-card">
                       <img src="${hotel.image}" alt="${hotel.name}" />
@@ -153,7 +162,7 @@
                             <div class="stars">${generateStars(hotel.stars)}</div>
                           </div> 
                           <div class="hotel-rating">
-                            <div class="rating">${hotel.rating} / 5</div>
+                            <div class="rating" style="background-color: ${ratingColor};">${hotel.rating}</div>
                             <p>${hotel.reviews} reviews</p> 
                           </div>   
                           <div class="hotel-location">
@@ -224,6 +233,16 @@
                     Infinity
                   );
 
+              let ratingColor = "";
+              
+              if (hotel.rating >= 0 && hotel.rating < 2.5) {
+                ratingColor = "#FFBDBD";
+              } else if (hotel.rating >= 2.5 && hotel.rating < 4) {
+                ratingColor = "#FFF6BD";
+              } else if (hotel.rating >= 4 && hotel.rating <= 5) {
+                ratingColor = "#CBFFBD";
+              }
+              
                   return `
                     <div class="hotel-card">
                       <img src="${hotel.image}" alt="${hotel.name}" />
@@ -234,7 +253,7 @@
                             <div class="stars">${generateStars(hotel.stars)}</div>
                           </div> 
                           <div class="hotel-rating">
-                            <div class="rating">${hotel.rating} / 5</div>
+                            <div class="rating" style="background-color: ${ratingColor};">${hotel.rating}</div>
                             <p>${hotel.reviews} reviews</p> 
                           </div>   
                           <div class="hotel-location">
