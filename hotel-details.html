@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hotel Details</title>
     <link rel="stylesheet" href="./CSS/hotel-details.css" />
-    <link rel="stylesheet" href="./CSS/hotels.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"> 
   </head>
   <body>
     <div id="header"></div>
@@ -45,6 +45,13 @@
 
     <div class="hotel-details-container">
       <div class="hotel-overview">
+        <div class="hotel-info">
+          <div class="hotel-stars" id="hotel-stars"></div>
+          <h1 id="hotel-name"></h1>
+          <div class="hotel-address">
+            <i class="fa-solid fa-location-dot"></i> <p id="hotel-address"></p>
+          </div>
+        </div>
         <div class="hotel-images">
           <img
             id="hotel-main-image"
@@ -54,14 +61,7 @@
           />
           <div class="image-grid" id="hotel-image-grid"></div>
         </div>
-        <div class="hotel-info">
-          <h1 id="hotel-name"></h1>
-          <p id="hotel-location" class="location">
-            <span class="icon">📍</span>
-          </p>
-          <p id="hotel-rating" class="rating"></p>
-          <div class="amenities" id="hotel-amenities"></div>
-        </div>
+        <div class="hotel-amenities" id="hotel-amenities"></div>
       </div>
 
       <div class="room-list" id="room-list"></div>
@@ -83,11 +83,8 @@
               const hotel = hotels.find((h) => h.id === Number(hotelId));
               if (hotel) {
                 document.getElementById("hotel-name").textContent = hotel.name;
-                document.getElementById("hotel-location").textContent =
-                  hotel.location;
-                document.getElementById(
-                  "hotel-rating"
-                ).textContent = `${hotel.rating} ★`;
+                document.getElementById("hotel-address").textContent = hotel.address;
+                document.getElementById("hotel-stars").innerHTML = "<i class=\"fa-solid fa-star\"></i>".repeat(hotel.stars) + "<i class=\"fa-regular fa-star\"></i>".repeat(5-hotel.stars) ;
                 document.getElementById("hotel-main-image").src = hotel.image;
 
                 const imageGrid = document.getElementById("hotel-image-grid");
@@ -101,7 +98,7 @@
                 const amenities = document.getElementById("hotel-amenities");
                 amenities.innerHTML = hotel.amenities
                   .map(
-                    (amenity) => `<span class="amenity-icon">${amenity}</span>`
+                    (amenity) => `<div><i class="${amenity.icon}"></i> <p>${amenity.text}</p></div>`
                   )
                   .join("");
 
