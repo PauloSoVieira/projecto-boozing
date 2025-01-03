@@ -12,7 +12,7 @@
     "rating": 4.5,
     "stars": 4,
     "reviews": 1300,
-    "price": 80,
+    "price": 20,
     "location": "Porto",
     "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
@@ -43,7 +43,7 @@
     ],
     "rating": 4.2,
     "stars": 3,
-    "reviews": 900,
+    "reviews": 100,
     "price": 75,
     "location": "Porto",
     "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
@@ -76,7 +76,7 @@
     "rating": 1.6,
     "stars": 2,
     "reviews": 1100,
-    "price": 100,
+    "price": 120,
     "location": "Madeira",
     "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
@@ -111,7 +111,7 @@
     "rating": 4.7,
     "stars": 1,
     "reviews": 1300,
-    "price": 110,
+    "price": 210,
     "location": "Lisboa",
     "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
@@ -143,7 +143,7 @@
     "rating": 3.5,
     "stars": 5,
     "reviews": 850,
-    "price": 85,
+    "price": 320,
     "location": "Porto",
     "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [
@@ -175,7 +175,7 @@
     "rating": 4.3,
     "stars": 4,
     "reviews": 1500,
-    "price": 320,
+    "price": 160,
     "location": "Madeira",
     "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
     "amenities": [

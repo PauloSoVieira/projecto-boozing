@@ -28,91 +28,122 @@
 
     <div class="main-content">
       <div class="filters">
-        <h3>Filters</h3>
-        <details>
-          <summary>Price (1€ - 350€)</summary>
-          <label
-            ><input type="checkbox" name="price" value="1-100" /> 1€ -
-            100€</label
-          >
-          <label
-            ><input type="checkbox" name="price" value="101-200" /> 101€ -
-            200€</label
-          >
-          <label
-            ><input type="checkbox" name="price" value="201-300" /> 201€ -
-            300€</label
-          >
-          <label
-            ><input type="checkbox" name="price" value="301-350" /> 301€ -
-            350€</label
-          >
-        </details>
+          <summary>Price</summary>
+          <label class="container-checkbox">
+            <input type="checkbox" name="price" value="0-50" />
+            <span class="checkmark"></span>
+            <p>0€ - 50€</p>
+          </label>
+          <label class="container-checkbox">
+            <input type="checkbox" name="price" value="51-100" />
+            <span class="checkmark"></span>
+            <p>51€ - 100€</p>
+          </label>
+          <label class="container-checkbox">
+            <input type="checkbox" name="price" value="101-200" />
+            <span class="checkmark"></span>
+            <p>101€ - 200€</p> 
+          </label>
+          <label class="container-checkbox">
+            <input type="checkbox" name="price" value="201-300" />
+            <span class="checkmark"></span>
+            <p>201€ - 300€</p>
+          </label>
+          <label class="container-checkbox">
+            <input type="checkbox" name="price" value="301-350" />
+            <span class="checkmark"></span>
+            <p>301€ - 350€</p>
+          </label>
 
-        <details>
-          <summary>Stars</summary>
-          <label
-            ><input
-              type="checkbox"
-              name="stars"
-              value="1"
-              class="star-checkbox"
-            />
-            1 ★</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="stars"
-              value="2"
-              class="star-checkbox"
-            />
-            2 ★★</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="stars"
-              value="3"
-              class="star-checkbox"
-            />
-            3 ★★★</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="stars"
-              value="4"
-              class="star-checkbox"
-            />
-            4 ★★★★</label
-          >
-          <label
-            ><input
-              type="checkbox"
-              name="stars"
-              value="5"
-              class="star-checkbox"
-            />
-            5 ★★★★★</label
-          >
-        </details>
+        <hr class="dashed">
 
-        <details>
-          <summary>Location</summary>
-          <label
-            ><input type="checkbox" name="location" value="Lisboa" />
-            Lisboa</label
-          >
-          <label
-            ><input type="checkbox" name="location" value="Porto" />
-            Porto</label
-          >
-          <label
-            ><input type="checkbox" name="location" value="Madeira" />
-            Madeira</label
-          >
-        </details>
+        <summary>Stars</summary>
+        <div style="display: flex; align-items: center; gap: 2px; margin:14px 0 22px 0">
+          <label class = "container-checkbox-stars">
+            <input type="checkbox" name="stars" value="1" class="star-checkbox">
+              <div>
+                <p class="unselectable">1</p>
+                <i class="fa-solid fa-star"></i> 
+              </div>
+          </label>
+
+        <label class = "container-checkbox-stars">
+          <input type="checkbox" id="checkbox-button" name="stars" value="2" class="star-checkbox">
+          <div>
+            <p class="unselectable">2</p>
+            <i class="fa-solid fa-star"></i> 
+          </div>
+        </label>
+
+        <label class = "container-checkbox-stars">
+          <input type="checkbox" id="checkbox-button" name="stars" value="3" class="star-checkbox">
+          <div>
+            <p class="unselectable">3</p>
+            <i class="fa-solid fa-star"></i> 
+          </div>
+        </label>
+
+        <label class = "container-checkbox-stars">
+          <input type="checkbox" id="checkbox-button" name="stars" value="4" class="star-checkbox">
+          <div>
+            <p class="unselectable">4</p>
+            <i class="fa-solid fa-star"></i> 
+          </div>
+        </label>
+
+        <label class = "container-checkbox-stars">
+          <input type="checkbox" id="checkbox-button" name="stars" value="5" class="star-checkbox">
+          <div>
+            <p class="unselectable">5</p>
+            <i class="fa-solid fa-star"></i> 
+          </div>
+        </label>
+        </div>
+
+        <hr class="dashed">
+
+        <summary>Location</summary>
+
+        <label class="container-checkbox">
+          <input type="checkbox" name="location" value="Lisboa" />
+          <span class="checkmark"></span>
+          <p>Lisboa</p>
+        </label>
+        <label class="container-checkbox">
+          <input type="checkbox" name="location" value="Porto" />
+          <span class="checkmark"></span>
+          <p>Porto</p>
+        </label>
+        <label class="container-checkbox">
+          <input type="checkbox" name="location" value="Madeira" />
+          <span class="checkmark"></span>
+          <p>Madeira</p>
+        </label>
+
+        <hr class="dashed">
+
+        <summary>Services</summary>
+
+        <label class="container-checkbox">
+          <input type="checkbox" name="services" value="Breakfast Included" />
+          <span class="checkmark"></span>
+          <p>Breakfast Included</p>
+        </label>
+        <label class="container-checkbox">
+          <input type="checkbox" name="services" value="Free Cancelation" />
+          <span class="checkmark"></span>
+          <p>Free Cancelation</p>
+        </label>
+        <label class="container-checkbox">
+          <input type="checkbox" name="services" value="Wifi" />
+          <span class="checkmark"></span>
+          <p>Wifi</p>
+        </label>
+        <label class="container-checkbox">
+          <input type="checkbox" name="services" value="Pet Friendly" />
+          <span class="checkmark"></span>
+          <p>Pet Friendly</p>
+        </label>
 
         <!--  <button>Apply Filters</button>-->
       </div>
@@ -123,11 +154,14 @@
     <div id="footer"></div>
     <script>
       document.addEventListener("DOMContentLoaded", () => {
+        
         const hotelsContainer = document.querySelector(".hotels");
+        
         const priceCheckboxes = document.querySelectorAll(
           "input[name='price']"
         );
         const starCheckboxes = document.querySelectorAll(".star-checkbox");
+        
         const locationCheckboxes = document.querySelectorAll(
           "input[name='location']"
         );
