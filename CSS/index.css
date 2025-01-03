@@ -67,15 +67,14 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 77%;
-  margin: auto;
+  width: 100%;
 }
 
 .hotels-carousel {
   display: flex;
   align-items: center;
   overflow: hidden;
-  width: 80%;
+  width: 63%;
   margin: 10px -10px;
 }
 
