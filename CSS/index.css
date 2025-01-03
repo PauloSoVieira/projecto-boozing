@@ -63,6 +63,81 @@ h2 {
   font-size: 1.2em;
 }
 
+.popular-hotels-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77%;
+  margin: auto;
+}
+
+.hotels-carousel {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 80%;
+  margin: 10px -10px;
+}
+
+.hotels-carousel-track-wrapper {
+  overflow: hidden;
+  width: 100%;
+}
+
+.hotels-carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  gap: 20px;
+}
+
+.hotel-card {
+  flex: 0 0 calc(33.3333% - 100px);
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.hotel-card img {
+  width: 350px;
+  height: 250px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.hotel-card h3 {
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.hotel-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.prev-hotels-btn,
+.next-hotels-btn {
+  background-color: transparent;
+  color: #757575;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 30px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prev-hotels-btn:disabled,
+.next-hotels-btn:disabled {
+  color: #aaa;
+  cursor: not-allowed;
+}
+
 @media (max-width: 390px) {
   h2 {
     font-size: 2em;

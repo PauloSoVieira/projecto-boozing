@@ -52,7 +52,7 @@
             const itemsToShow = 3;
             const totalItems = document.querySelectorAll(".city-card").length;
             const itemWidth =
-              document.querySelector(".city-card").offsetWidth + 30;
+              document.querySelector(".city-card").offsetWidth + 50;
             let currentIndex = 0;
 
             function updateCarousel() {
@@ -90,7 +90,7 @@
             prevBtn.addEventListener("click", handlePrev);
             nextBtn.addEventListener("click", handleNext);
 
-            setInterval(handleNext, 5000);
+            //    setInterval(handleNext, 5000);
 
             updateCarousel();
           }, 100);
@@ -99,27 +99,47 @@
           console.error("Erro ao carregar o carrossel:", error)
         );
     </script>
-
-    <div class="container-bottom">
-      <h2>Hoteis Mais Populares</h2>
-      <div class="card-container">
-        <div class="card">
-          <img src="./IMG/main.jpg" alt="Hotel" />
-          <h3>Radisson Blu Hotel</h3>
-          <p>From: 80€</p>
-        </div>
-        <div class="card">
-          <img src="./IMG/main.jpg" alt="Hotel" />
-          <h3>Radisson Blu Hotel</h3>
-          <p>From: 80€</p>
-        </div>
-        <div class="card">
-          <img src="./IMG/main.jpg" alt="Hotel" />
-          <h3>Radisson Blu Hotel</h3>
-          <p>From: 80€</p>
+    <h2>Hotéis Mais Populares</h2>
+    <div class="popular-hotels-cont">
+      <button class="prev-hotels-btn">
+        <i class="fa-solid fa-circle-chevron-left"></i>
+      </button>
+      <div class="hotels-carousel">
+        <div class="hotels-carousel-track-wrapper">
+          <div class="hotels-carousel-track">
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Radisson Blu Hotel" />
+              <h3>Radisson Blu Hotel</h3>
+              <p>From: 80€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Marriott Hotel" />
+              <h3>Marriott Hotel</h3>
+              <p>From: 120€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Hilton Hotel" />
+              <h3>Hilton Hotel</h3>
+              <p>From: 100€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Ibis Hotel" />
+              <h3>Ibis Hotel</h3>
+              <p>From: 70€</p>
+            </div>
+            <div class="hotel-card">
+              <img src="./IMG/main.jpg" alt="Sheraton Hotel" />
+              <h3>Sheraton Hotel</h3>
+              <p>From: 150€</p>
+            </div>
+          </div>
         </div>
       </div>
+      <button class="next-hotels-btn">
+        <i class="fa-solid fa-circle-chevron-right"></i>
+      </button>
     </div>
+
     <div id="footer"></div>
     <script>
       fetch("./footer.html")
@@ -128,7 +148,43 @@
         .catch((error) => console.error("Erro ao carregar o footer:", error));
     </script>
 
-    <script></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const trackHotels = document.querySelector(".hotels-carousel-track");
+        const prevHotelsBtn = document.querySelector(".prev-hotels-btn");
+        const nextHotelsBtn = document.querySelector(".next-hotels-btn");
+        const hotelCards = document.querySelectorAll(".hotel-card");
+        const itemsToShowHotels = 3;
+        const itemWidthHotels = hotelCards[0].offsetWidth + 20;
+        let currentIndexHotels = 0;
+
+        function updateCarouselHotels() {
+          trackHotels.style.transform = `translateX(-${
+            currentIndexHotels * itemWidthHotels
+          }px)`;
+
+          prevHotelsBtn.disabled = currentIndexHotels === 0;
+          nextHotelsBtn.disabled =
+            currentIndexHotels >=
+            Math.ceil(hotelCards.length / itemsToShowHotels) - 1;
+        }
+
+        nextHotelsBtn.addEventListener("click", () => {
+          if (currentIndexHotels < hotelCards.length - itemsToShowHotels) {
+            currentIndexHotels++;
+            updateCarouselHotels();
+          }
+        });
+
+        prevHotelsBtn.addEventListener("click", () => {
+          if (currentIndexHotels > 0) {
+            currentIndexHotels--;
+            updateCarouselHotels();
+          }
+        });
+
+        updateCarouselHotels();
+      });
+    </script>
   </body>
-  s
 </html>
