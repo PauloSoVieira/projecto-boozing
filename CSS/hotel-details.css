@@ -16,28 +16,40 @@ body {
   overflow: hidden;
 }
 
-.hotel-details img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px 8px 0 0;
+.hotel-images {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
 }
 
-.hotel-main-image {
+.main-image-container {
+  flex: 1;
+  max-width: 60%;
+}
+
+.main-image {
   width: 100%;
-  height: auto;
-  border-radius: 8px;
+  height: 400px;
   object-fit: cover;
+  border-radius: 8px;
 }
 
 .image-grid {
+  flex: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
-  margin-top: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 8px;
 }
 
 .hotel-stars {
-  color: #F5E31A;
+  color: #f5e31a;
   font-size: 15px;
 }
 
@@ -50,7 +62,7 @@ body {
   margin: 5px 0px 15px 0px;
 }
 
-.hotel-amenities{
+.hotel-amenities {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -58,10 +70,10 @@ body {
   margin: 30px 0px 30px 0px;
 }
 
-.hotel-amenities div{
+.hotel-amenities div {
   display: inline-flex;
-  color: #6A3217;
-  border: 1px solid #6A3217;
+  color: #6a3217;
+  border: 1px solid #6a3217;
   border-radius: 10px;
   padding: 5px 16px;
   align-items: center;
