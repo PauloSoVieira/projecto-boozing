@@ -50,48 +50,38 @@
             const track = document.querySelector(".carousel-track");
             const prevBtn = document.querySelector(".prev-btn");
             const nextBtn = document.querySelector(".next-btn");
+            const cityCards = document.querySelectorAll(".city-card");
             const itemsToShow = 3;
-            const totalItems = document.querySelectorAll(".city-card").length;
-            const itemWidth =
-              document.querySelector(".city-card").offsetWidth + 50;
+            const totalItems = cityCards.length;
+            const itemWidth = cityCards[0].offsetWidth + 50;
             let currentIndex = 0;
 
             function updateCarousel() {
               track.style.transform = `translateX(-${
-                currentIndex * itemsToShow * itemWidth
+                currentIndex * itemWidth
               }px)`;
             }
 
             function handleNext() {
-              currentIndex++;
-              if ((currentIndex + 1) * itemsToShow >= totalItems) {
+              if (currentIndex + itemsToShow < totalItems) {
+                currentIndex++;
+              } else {
                 currentIndex = 0;
-                track.style.transition = "none";
-                updateCarousel();
-                track.offsetHeight;
-                track.style.transition = "transform 0.5s ease-in-out";
               }
               updateCarousel();
             }
 
             function handlePrev() {
-              currentIndex--;
-              if (currentIndex < 0) {
-                currentIndex = Math.floor(
-                  (totalItems - itemsToShow) / itemsToShow
-                );
-                track.style.transition = "none";
-                updateCarousel();
-                track.offsetHeight;
-                track.style.transition = "transform 0.5s ease-in-out";
+              if (currentIndex > 0) {
+                currentIndex--;
+              } else {
+                currentIndex = Math.floor((totalItems - itemsToShow) / 1);
               }
               updateCarousel();
             }
 
             prevBtn.addEventListener("click", handlePrev);
             nextBtn.addEventListener("click", handleNext);
-
-            //    setInterval(handleNext, 5000);
 
             updateCarousel();
           }, 100);
@@ -100,6 +90,7 @@
           console.error("Erro ao carregar o carrossel:", error)
         );
     </script>
+
     <h2>Hotéis Mais Populares</h2>
     <div class="popular-hotels-cont">
       <button class="prev-hotels-btn">
@@ -163,26 +154,31 @@
           trackHotels.style.transform = `translateX(-${
             currentIndexHotels * itemWidthHotels
           }px)`;
-
-          prevHotelsBtn.disabled = currentIndexHotels === 0;
-          nextHotelsBtn.disabled =
-            currentIndexHotels >=
-            Math.ceil(hotelCards.length / itemsToShowHotels) - 1;
         }
 
-        nextHotelsBtn.addEventListener("click", () => {
-          if (currentIndexHotels < hotelCards.length - itemsToShowHotels) {
+        function handleNextHotels() {
+          if (currentIndexHotels + itemsToShowHotels < hotelCards.length) {
             currentIndexHotels++;
-            updateCarouselHotels();
+          } else {
+            currentIndexHotels = 0;
           }
-        });
+          updateCarouselHotels();
+        }
 
-        prevHotelsBtn.addEventListener("click", () => {
+        function handlePrevHotels() {
           if (currentIndexHotels > 0) {
             currentIndexHotels--;
-            updateCarouselHotels();
+          } else {
+            currentIndexHotels = Math.floor(
+              (hotelCards.length - itemsToShowHotels) / 1
+            );
           }
-        });
+          updateCarouselHotels();
+        }
+
+        nextHotelsBtn.addEventListener("click", handleNextHotels);
+
+        prevHotelsBtn.addEventListener("click", handlePrevHotels);
 
         updateCarouselHotels();
       });
