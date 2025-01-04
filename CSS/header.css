@@ -9,7 +9,7 @@
 .main-header .container {
   width: 70%;
   margin: 0 auto;
-  padding: 20px 50px;
+  padding: 40px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -21,19 +21,38 @@
   color: #333;
 }
 
+.nav-header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
 .main-header nav a {
-  margin: 0 15px;
+  color: #757575;
+  width: 73px;
   text-decoration: none;
-  color: #555;
-  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.3s ease;
 }
 
 .main-header nav a:hover {
   color: #8b5e34;
 }
 
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo img {
+  width: 180px;
+}
+
 @media (max-width: 390px) {
   .main-header .container {
-    width: 90%; /* Ajusta a largura em telas menores */
+    width: 90%;
   }
 }
