@@ -170,7 +170,8 @@
           <p>Pet Friendly</p>
         </label>
 
-        <!--  <button>Apply Filters</button>-->
+        <button id="uncheckButton">Limpar Filtros</button>
+
       </div>
 
       <div class="hotels"></div>
@@ -178,9 +179,17 @@
 
     <div id="footer"></div>
     <script>
-        
       document.addEventListener("DOMContentLoaded", () => {
         
+        document.getElementById("uncheckButton").addEventListener("click", () => {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = false;
+                updateHotels();
+            });
+        });
+
         const hotelsContainer = document.querySelector(".hotels");
         
         const priceCheckboxes = document.querySelectorAll(
