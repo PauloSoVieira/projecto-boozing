@@ -2,12 +2,12 @@
   {
     "id": 1,
     "name": "Tivoli Avenida Liberdade",
-    "image": "./IMG/Tivoli/Tivoli.jpeg",
+    "image": "./IMG/Tivoli/Tivoli.jpg",
     "images": [
-      "./IMG/Tivoli/Tivoli1.jpeg",
-      "./IMG/Tivoli/Tivoli2.jpeg",
-      "./IMG/Tivoli/Tivoli3.jpeg",
-      "./IMG/Tivoli/Tivoli4.jpeg"
+      "./IMG/Tivoli/Tivoli1.jpg",
+      "./IMG/Tivoli/Tivoli2.jpg",
+      "./IMG/Tivoli/Tivoli3.jpg",
+      "./IMG/Tivoli/Tivoli4.jpg"
     ],
     "rating": 4.6,
     "stars": 5,
@@ -33,12 +33,12 @@
   {
     "id": 2,
     "name": "Hotel Lisboa Plaza",
-    "image": "./IMG/LisboaPlaza/LisboaPlaza.jpeg",
+    "image": "./IMG/LisboaPlaza/LisboaPlaza.jpg",
     "images": [
-      "./IMG/LisboaPlaza/LisboaPlaza1.jpeg",
-      "./IMG/LisboaPlaza/LisboaPlaza2.jpeg",
-      "./IMG/LisboaPlaza/LisboaPlaza3.jpeg",
-      "./IMG/LisboaPlaza/LisboaPlaza4.jpeg"
+      "./IMG/LisboaPlaza/LisboaPlaza1.jpg",
+      "./IMG/LisboaPlaza/LisboaPlaza2.jpg",
+      "./IMG/LisboaPlaza/LisboaPlaza3.jpg",
+      "./IMG/LisboaPlaza/LisboaPlaza4.jpg"
     ],
     "rating": 4.3,
     "stars": 4,
@@ -63,12 +63,12 @@
   {
     "id": 3,
     "name": "Hotel Mundial",
-    "image": "./IMG/Mundial/Mundial.jpeg",
+    "image": "./IMG/Mundial/Mundial.jpg",
     "images": [
-      "./IMG/Mundial/Mundial1.jpeg",
-      "./IMG/Mundial/Mundial2.jpeg",
-      "./IMG/Mundial/Mundial3.jpeg",
-      "./IMG/Mundial/Mundial4.jpeg"
+      "./IMG/Mundial/Mundial1.jpg",
+      "./IMG/Mundial/Mundial2.jpg",
+      "./IMG/Mundial/Mundial3.jpg",
+      "./IMG/Mundial/Mundial4.jpg"
     ],
     "rating": 4.4,
     "stars": 4,
@@ -93,12 +93,12 @@
     {
     "id": 4,
     "name": "Pestana Porto - A Brasileira",
-    "image": "./IMG/Pestana/Pestana.jpeg",
+    "image": "./IMG/Pestana/Pestana.jpg",
     "images": [
-      "./IMG/Pestana/Pestana1.jpeg",
-      "./IMG/Pestana/Pestana2.jpeg",
-      "./IMG/Pestana/Pestana3.jpeg",
-      "./IMG/Pestana/Pestana4.jpeg"
+      "./IMG/Pestana/Pestana1.jpg",
+      "./IMG/Pestana/Pestana2.jpg",
+      "./IMG/Pestana/Pestana3.jpg",
+      "./IMG/Pestana/Pestana4.jpg"
     ],
     "rating": 4.7,
     "stars": 5,
@@ -124,12 +124,12 @@
   {
     "id": 5,
     "name": "Hotel Infante Sagres",
-    "image": "./IMG/InfanteSagres/InfanteSagres.jpeg",
+    "image": "./IMG/InfanteSagres/InfanteSagres.jpg",
     "images": [
-      "./IMG/InfanteSagres/InfanteSagres1.jpeg",
-      "./IMG/InfanteSagres/InfanteSagres2.jpeg",
-      "./IMG/InfanteSagres/InfanteSagres3.jpeg",
-      "./IMG/InfanteSagres/InfanteSagres4.jpeg"
+      "./IMG/InfanteSagres/InfanteSagres1.jpg",
+      "./IMG/InfanteSagres/InfanteSagres2.jpg",
+      "./IMG/InfanteSagres/InfanteSagres3.jpg",
+      "./IMG/InfanteSagres/InfanteSagres4.jpg"
     ],
     "rating": 4.6,
     "stars": 5,
@@ -155,12 +155,12 @@
   {
     "id": 6,
     "name": "Eurostars Heroismo",
-    "image": "./IMG/EurostarsHeroismo/EurostarsHeroismo.jpeg",
+    "image": "./IMG/EurostarsHeroismo/EurostarsHeroismo.jpg",
     "images": [
-      "./IMG/EurostarsHeroismo/EurostarsHeroismo1.jpeg",
-      "./IMG/EurostarsHeroismo/EurostarsHeroismo2.jpeg",
-      "./IMG/EurostarsHeroismo/EurostarsHeroismo3.jpeg",
-      "./IMG/EurostarsHeroismo/EurostarsHeroismo4.jpeg"
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo1.jpg",
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo2.jpg",
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo3.jpg",
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo4.jpg"
     ],
     "rating": 4.2,
     "stars": 4,
@@ -184,19 +184,19 @@
   },
     {
     "id": 7,
-    "name": "Hotel Algarve Ria",
-    "image": "./IMG/AlgarveRia/AlgarveRia.jpeg",
+    "name": "Hotel Mar A Vista",
+    "image": "./IMG/AlgarveRia/AlgarveRia.jpg",
     "images": [
-      "./IMG/AlgarveRia/AlgarveRia1.jpeg",
-      "./IMG/AlgarveRia/AlgarveRia2.jpeg",
-      "./IMG/AlgarveRia/AlgarveRia3.jpeg",
-      "./IMG/AlgarveRia/AlgarveRia4.jpeg"
+      "./IMG/AlgarveRia/AlgarveRia1.jpg",
+      "./IMG/AlgarveRia/AlgarveRia2.jpg",
+      "./IMG/AlgarveRia/AlgarveRia3.jpg",
+      "./IMG/AlgarveRia/AlgarveRia4.jpg"
     ],
-    "rating": 4.5,
-    "stars": 4,
-    "reviews": 800,
+    "rating": 2.2,
+    "stars": 2,
+    "reviews": 22222,
     "location": "Albufeira",
-    "address": "Avenida da Liberdade 183, 8200-155 Albufeira",
+    "address": "Cerro da Piedade, 8200-918 Albufeira",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
@@ -216,12 +216,12 @@
   {
     "id": 8,
     "name": "Grand Muthu Forte do Vale",
-    "image": "./IMG/ForteDoVale/ForteDoVale.jpeg",
+    "image": "./IMG/ForteDoVale/ForteDoVale.jpg",
     "images": [
-      "./IMG/ForteDoVale/ForteDoVale1.jpeg",
-      "./IMG/ForteDoVale/ForteDoVale2.jpeg",
-      "./IMG/ForteDoVale/ForteDoVale3.jpeg",
-      "./IMG/ForteDoVale/ForteDoVale4.jpeg"
+      "./IMG/ForteDoVale/ForteDoVale1.jpg",
+      "./IMG/ForteDoVale/ForteDoVale2.jpg",
+      "./IMG/ForteDoVale/ForteDoVale3.jpg",
+      "./IMG/ForteDoVale/ForteDoVale4.jpg"
     ],
     "rating": 4.3,
     "stars": 4,
@@ -247,12 +247,12 @@
   {
     "id": 9,
     "name": "Epic Sana Algarve Hotel",
-    "image": "./IMG/EpicSana/EpicSana.jpeg",
+    "image": "./IMG/EpicSana/EpicSana.jpg",
     "images": [
-      "./IMG/EpicSana/EpicSana1.jpeg",
-      "./IMG/EpicSana/EpicSana2.jpeg",
-      "./IMG/EpicSana/EpicSana3.jpeg",
-      "./IMG/EpicSana/EpicSana4.jpeg"
+      "./IMG/EpicSana/EpicSana1.jpg",
+      "./IMG/EpicSana/EpicSana2.jpg",
+      "./IMG/EpicSana/EpicSana3.jpg",
+      "./IMG/EpicSana/EpicSana4.jpg"
     ],
     "rating": 4.8,
     "stars": 5,
@@ -278,12 +278,12 @@
     {
     "id": 10,
     "name": "M'AR De AR Muralhas",
-    "image": "./IMG/MARDeAR/MARDeAR.jpeg",
+    "image": "./IMG/MARDeAR/MARDeAR.jpg",
     "images": [
-      "./IMG/MARDeAR/MARDeAR1.jpeg",
-      "./IMG/MARDeAR/MARDeAR2.jpeg",
-      "./IMG/MARDeAR/MARDeAR3.jpeg",
-      "./IMG/MARDeAR/MARDeAR4.jpeg"
+      "./IMG/MARDeAR/MARDeAR1.jpg",
+      "./IMG/MARDeAR/MARDeAR2.jpg",
+      "./IMG/MARDeAR/MARDeAR3.jpg",
+      "./IMG/MARDeAR/MARDeAR4.jpg"
     ],
     "rating": 4.5,
     "stars": 4,
@@ -309,12 +309,12 @@
   {
     "id": 11,
     "name": "Évora Hotel",
-    "image": "./IMG/EvoraHotel/EvoraHotel.jpeg",
+    "image": "./IMG/EvoraHotel/EvoraHotel.png",
     "images": [
-      "./IMG/EvoraHotel/EvoraHotel1.jpeg",
-      "./IMG/EvoraHotel/EvoraHotel2.jpeg",
-      "./IMG/EvoraHotel/EvoraHotel3.jpeg",
-      "./IMG/EvoraHotel/EvoraHotel4.jpeg"
+      "./IMG/EvoraHotel/EvoraHotel1.jpg",
+      "./IMG/EvoraHotel/EvoraHotel2.jpg",
+      "./IMG/EvoraHotel/EvoraHotel3.jpg",
+      "./IMG/EvoraHotel/EvoraHotel4.jpg"
     ],
     "rating": 4.2,
     "stars": 4,
@@ -340,12 +340,12 @@
   {
     "id": 12,
     "name": "Pousada Convento de Évora",
-    "image": "./IMG/PousadaConvento/PousadaConvento.jpeg",
+    "image": "./IMG/PousadaConvento/PousadaConvento.jpg",
     "images": [
-      "./IMG/PousadaConvento/PousadaConvento1.jpeg",
-      "./IMG/PousadaConvento/PousadaConvento2.jpeg",
-      "./IMG/PousadaConvento/PousadaConvento3.jpeg",
-      "./IMG/PousadaConvento/PousadaConvento4.jpeg"
+      "./IMG/PousadaConvento/PousadaConvento1.jpg",
+      "./IMG/PousadaConvento/PousadaConvento2.jpg",
+      "./IMG/PousadaConvento/PousadaConvento3.jpg",
+      "./IMG/PousadaConvento/PousadaConvento4.jpg"
     ],
     "rating": 4.6,
     "stars": 5,
@@ -371,12 +371,12 @@
     {
     "id": 13,
     "name": "Hotel Mercure Figueira da Foz",
-    "image": "./IMG/Mercure/MercureFigueira.jpeg",
+    "image": "./IMG/Mercure/MercureFigueira.jpg",
     "images": [
-      "./IMG/Mercure/MercureFigueira1.jpeg",
-      "./IMG/Mercure/MercureFigueira2.jpeg",
-      "./IMG/Mercure/MercureFigueira3.jpeg",
-      "./IMG/Mercure/MercureFigueira4.jpeg"
+      "./IMG/Mercure/MercureFigueira1.jpg",
+      "./IMG/Mercure/MercureFigueira2.jpg",
+      "./IMG/Mercure/MercureFigueira3.jpg",
+      "./IMG/Mercure/MercureFigueira4.jpg"
     ],
     "rating": 4.4,
     "stars": 4,
@@ -401,16 +401,16 @@
   },
   {
     "id": 14,
-    "name": "Hotel Baía",
-    "image": "./IMG/Baia/BaiaFigueira.jpeg",
+    "name": "Hotel B&B Figueira da Foz",
+    "image": "./IMG/Baia/BaiaFigueira.jpg",
     "images": [
-      "./IMG/Baia/BaiaFigueira1.jpeg",
-      "./IMG/Baia/BaiaFigueira2.jpeg",
-      "./IMG/Baia/BaiaFigueira3.jpeg",
-      "./IMG/Baia/BaiaFigueira4.jpeg"
+      "./IMG/Baia/BaiaFigueira1.jpg",
+      "./IMG/Baia/BaiaFigueira2.jpg",
+      "./IMG/Baia/BaiaFigueira3.jpg",
+      "./IMG/Baia/BaiaFigueira4.jpg"
     ],
-    "rating": 4.2,
-    "stars": 4,
+    "rating": 3.9,
+    "stars": 3,
     "reviews": 800,
     "location": "Figueira da Foz",
     "address": "Avenida do Brasil, 3080-086 Figueira da Foz",
@@ -433,12 +433,12 @@
   {
     "id": 15,
     "name": "Sweet Atlantic Hotel & Spa",
-    "image": "./IMG/SweetAtlantic/SweetAtlantic.jpeg",
+    "image": "./IMG/SweetAtlantic/SweetAtlantic.jpg",
     "images": [
-      "./IMG/SweetAtlantic/SweetAtlantic1.jpeg",
-      "./IMG/SweetAtlantic/SweetAtlantic2.jpeg",
-      "./IMG/SweetAtlantic/SweetAtlantic3.jpeg",
-      "./IMG/SweetAtlantic/SweetAtlantic4.jpeg"
+      "./IMG/SweetAtlantic/SweetAtlantic1.jpg",
+      "./IMG/SweetAtlantic/SweetAtlantic2.jpg",
+      "./IMG/SweetAtlantic/SweetAtlantic3.jpg",
+      "./IMG/SweetAtlantic/SweetAtlantic4.jpg"
     ],
     "rating": 4.7,
     "stars": 5,
@@ -464,12 +464,12 @@
   {
     "id": 16,
     "name": "Belmond Reid's Palace",
-    "image": "./IMG/ReidsPalace/ReidsPalace.jpeg",
+    "image": "./IMG/ReidsPalace/ReidsPalace.jpg",
     "images": [
-      "./IMG/ReidsPalace/ReidsPalace1.jpeg",
-      "./IMG/ReidsPalace/ReidsPalace2.jpeg",
-      "./IMG/ReidsPalace/ReidsPalace3.jpeg",
-      "./IMG/ReidsPalace/ReidsPalace4.jpeg"
+      "./IMG/ReidsPalace/ReidsPalace1.jpg",
+      "./IMG/ReidsPalace/ReidsPalace2.jpg",
+      "./IMG/ReidsPalace/ReidsPalace3.jpg",
+      "./IMG/ReidsPalace/ReidsPalace4.jpg"
     ],
     "rating": 4.9,
     "stars": 5,
@@ -495,12 +495,12 @@
   {
     "id": 17,
     "name": "The Cliff Bay",
-    "image": "./IMG/CliffBay/CliffBay.jpeg",
+    "image": "./IMG/CliffBay/CliffBay.jpg",
     "images": [
-      "./IMG/CliffBay/CliffBay1.jpeg",
-      "./IMG/CliffBay/CliffBay2.jpeg",
-      "./IMG/CliffBay/CliffBay3.jpeg",
-      "./IMG/CliffBay/CliffBay4.jpeg"
+      "./IMG/CliffBay/CliffBay1.jpg",
+      "./IMG/CliffBay/CliffBay2.jpg",
+      "./IMG/CliffBay/CliffBay3.jpg",
+      "./IMG/CliffBay/CliffBay4.jpg"
     ],
     "rating": 4.7,
     "stars": 5,
@@ -526,12 +526,12 @@
   {
     "id": 18,
     "name": "Pestana CR7 Funchal",
-    "image": "./IMG/PestanaCR7/PestanaCR7.jpeg",
+    "image": "./IMG/PestanaCR7/PestanaCR7.jpg",
     "images": [
-      "./IMG/PestanaCR7/PestanaCR71.jpeg",
-      "./IMG/PestanaCR7/PestanaCR72.jpeg",
-      "./IMG/PestanaCR7/PestanaCR73.jpeg",
-      "./IMG/PestanaCR7/PestanaCR74.jpeg"
+      "./IMG/PestanaCR7/PestanaCR71.jpg",
+      "./IMG/PestanaCR7/PestanaCR72.jpg",
+      "./IMG/PestanaCR7/PestanaCR73.jpg",
+      "./IMG/PestanaCR7/PestanaCR74.jpg"
     ],
     "rating": 4.3,
     "stars": 4,
@@ -557,12 +557,12 @@
   {
     "id": 19,
     "name": "Hotel Miramar",
-    "image": "./IMG/Miramar/MiramarNazaré.jpeg",
+    "image": "./IMG/Miramar/MiramarNazaré.jpg",
     "images": [
-      "./IMG/Miramar/MiramarNazaré1.jpeg",
-      "./IMG/Miramar/MiramarNazaré2.jpeg",
-      "./IMG/Miramar/MiramarNazaré3.jpeg",
-      "./IMG/Miramar/MiramarNazaré4.jpeg"
+      "./IMG/Miramar/MiramarNazaré1.jpg",
+      "./IMG/Miramar/MiramarNazaré2.jpg",
+      "./IMG/Miramar/MiramarNazaré3.jpg",
+      "./IMG/Miramar/MiramarNazaré4.jpg"
     ],
     "rating": 4.6,
     "stars": 4,
@@ -588,12 +588,12 @@
   {
     "id": 20,
     "name": "Hotel Praia",
-    "image": "./IMG/Praia/PraiaNazaré.jpeg",
+    "image": "./IMG/Praia/PraiaNazaré.jpg",
     "images": [
-      "./IMG/Praia/PraiaNazaré1.jpeg",
-      "./IMG/Praia/PraiaNazaré2.jpeg",
-      "./IMG/Praia/PraiaNazaré3.jpeg",
-      "./IMG/Praia/PraiaNazaré4.jpeg"
+      "./IMG/Praia/PraiaNazaré1.jpg",
+      "./IMG/Praia/PraiaNazaré2.jpg",
+      "./IMG/Praia/PraiaNazaré3.jpg",
+      "./IMG/Praia/PraiaNazaré4.jpg"
     ],
     "rating": 4.3,
     "stars": 4,
@@ -619,12 +619,12 @@
   {
     "id": 21,
     "name": "Hotel Maré",
-    "image": "./IMG/Mare/MareNazaré.jpeg",
+    "image": "./IMG/Mare/MareNazaré.jpg",
     "images": [
-      "./IMG/Mare/MareNazaré1.jpeg",
-      "./IMG/Mare/MareNazaré2.jpeg",
-      "./IMG/Mare/MareNazaré3.jpeg",
-      "./IMG/Mare/MareNazaré4.jpeg"
+      "./IMG/Mare/MareNazaré1.jpg",
+      "./IMG/Mare/MareNazaré2.jpg",
+      "./IMG/Mare/MareNazaré3.jpg",
+      "./IMG/Mare/MareNazaré4.jpg"
     ],
     "rating": 4.5,
     "stars": 4,
@@ -650,12 +650,12 @@
     {
     "id": 22,
     "name": "Hotel Algarve Casino",
-    "image": "./IMG/AlgarveCasino/AlgarveCasino.jpeg",
+    "image": "./IMG/AlgarveCasino/AlgarveCasino.jpg",
     "images": [
-      "./IMG/AlgarveCasino/AlgarveCasino1.jpeg",
-      "./IMG/AlgarveCasino/AlgarveCasino2.jpeg",
-      "./IMG/AlgarveCasino/AlgarveCasino3.jpeg",
-      "./IMG/AlgarveCasino/AlgarveCasino4.jpeg"
+      "./IMG/AlgarveCasino/AlgarveCasino1.jpg",
+      "./IMG/AlgarveCasino/AlgarveCasino2.jpg",
+      "./IMG/AlgarveCasino/AlgarveCasino3.jpg",
+      "./IMG/AlgarveCasino/AlgarveCasino4.jpg"
     ],
     "rating": 4.6,
     "stars": 5,
@@ -680,13 +680,13 @@
   },
   {
     "id": 23,
-    "name": "Tivoli Marina Portimão",
-    "image": "./IMG/TivoliMarina/TivoliMarina.jpeg",
+    "name": "NH Marina Portimão Resort",
+    "image": "./IMG/TivoliMarina/TivoliMarina.jpg",
     "images": [
-      "./IMG/TivoliMarina/TivoliMarina1.jpeg",
-      "./IMG/TivoliMarina/TivoliMarina2.jpeg",
-      "./IMG/TivoliMarina/TivoliMarina3.jpeg",
-      "./IMG/TivoliMarina/TivoliMarina4.jpeg"
+      "./IMG/TivoliMarina/TivoliMarina1.jpg",
+      "./IMG/TivoliMarina/TivoliMarina2.jpg",
+      "./IMG/TivoliMarina/TivoliMarina3.jpg",
+      "./IMG/TivoliMarina/TivoliMarina4.jpg"
     ],
     "rating": 4.5,
     "stars": 4,
@@ -712,12 +712,12 @@
   {
     "id": 24,
     "name": "Jupiter Algarve Hotel",
-    "image": "./IMG/JupiterAlgarve/JupiterAlgarve.jpeg",
+    "image": "./IMG/JupiterAlgarve/JupiterAlgarve.jpg",
     "images": [
-      "./IMG/JupiterAlgarve/JupiterAlgarve1.jpeg",
-      "./IMG/JupiterAlgarve/JupiterAlgarve2.jpeg",
-      "./IMG/JupiterAlgarve/JupiterAlgarve3.jpeg",
-      "./IMG/JupiterAlgarve/JupiterAlgarve4.jpeg"
+      "./IMG/JupiterAlgarve/JupiterAlgarve1.jpg",
+      "./IMG/JupiterAlgarve/JupiterAlgarve2.jpg",
+      "./IMG/JupiterAlgarve/JupiterAlgarve3.jpg",
+      "./IMG/JupiterAlgarve/JupiterAlgarve4.jpg"
     ],
     "rating": 4.4,
     "stars": 4,
@@ -742,12 +742,12 @@
     {
     "id": 25,
     "name": "Tivoli Palácio de Seteais",
-    "image": "./IMG/Seteais/TivoliSeteais.jpeg",
+    "image": "./IMG/Seteais/TivoliSeteais.jpg",
     "images": [
-      "./IMG/Seteais/TivoliSeteais1.jpeg",
-      "./IMG/Seteais/TivoliSeteais2.jpeg",
-      "./IMG/Seteais/TivoliSeteais3.jpeg",
-      "./IMG/Seteais/TivoliSeteais4.jpeg"
+      "./IMG/Seteais/TivoliSeteais1.jpg",
+      "./IMG/Seteais/TivoliSeteais2.jpg",
+      "./IMG/Seteais/TivoliSeteais3.jpg",
+      "./IMG/Seteais/TivoliSeteais4.jpg"
     ],
     "rating": 4.8,
     "stars": 5,
@@ -772,12 +772,12 @@
   {
     "id": 26,
     "name": "Lawrence's Hotel",
-    "image": "./IMG/Lawrences/Lawrences.jpeg",
+    "image": "./IMG/Lawrences/Lawrences.jpg",
     "images": [
-      "./IMG/Lawrences/Lawrences1.jpeg",
-      "./IMG/Lawrences/Lawrences2.jpeg",
-      "./IMG/Lawrences/Lawrences3.jpeg",
-      "./IMG/Lawrences/Lawrences4.jpeg"
+      "./IMG/Lawrences/Lawrences1.jpg",
+      "./IMG/Lawrences/Lawrences2.jpg",
+      "./IMG/Lawrences/Lawrences3.jpg",
+      "./IMG/Lawrences/Lawrences4.jpg"
     ],
     "rating": 4.6,
     "stars": 4,
@@ -801,12 +801,12 @@
   {
     "id": 27,
     "name": "Sintra Boutique Hotel",
-    "image": "./IMG/SintraBoutique/SintraBoutique.jpeg",
+    "image": "./IMG/SintraBoutique/SintraBoutique.jpg",
     "images": [
-      "./IMG/SintraBoutique/SintraBoutique1.jpeg",
-      "./IMG/SintraBoutique/SintraBoutique2.jpeg",
-      "./IMG/SintraBoutique/SintraBoutique3.jpeg",
-      "./IMG/SintraBoutique/SintraBoutique4.jpeg"
+      "./IMG/SintraBoutique/SintraBoutique1.jpg",
+      "./IMG/SintraBoutique/SintraBoutique2.jpg",
+      "./IMG/SintraBoutique/SintraBoutique3.jpg",
+      "./IMG/SintraBoutique/SintraBoutique4.jpg"
     ],
     "rating": 4.7,
     "stars": 4,
