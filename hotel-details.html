@@ -12,18 +12,18 @@
     <div id="reservation-modal" class="modal">
       <div class="modal-content">
         <span class="close">&times;</span>
-        <h2>Reservar Quarto</h2>
+        <h2>Book Room</h2>
         <form id="reservation-form">
-          <label for="name">Nome:</label>
+          <label for="name">Name:</label>
           <input type="text" id="name" name="name" required />
 
           <label for="email">E-mail:</label>
           <input type="email" id="email" name="email" required />
 
-          <label for="contact">Contato:</label>
+          <label for="contact">Contact:</label>
           <input type="tel" id="contact" name="contact" required />
 
-          <button type="submit">Confirmar Reserva</button>
+          <button type="submit">Confirm Booking</button>
         </form>
       </div>
     </div>
@@ -115,17 +115,12 @@
                     (room, index) => `
                   <div class="room" data-index="${index}">
                     <div class="room-info">
-                      <h2>${room.type} Room</h2>
-                      <ul>
-                        <li>Max People: ${room.maxPeople}</li>
-                        <li>Breakfast Included</li>
-                        <li>Air Conditioning</li>
-                        <li>No Smoking Rooms</li>
-                      </ul>
+                      <h2>${room.type} Room</h2> 
+                      <i class="fa-solid fa-user"></i><a> x ${room.maxPeople}</a>
                     </div>
                     <div class="room-price">
                       <span>${room.pricePerNight}€</span>
-                      <button class="reserve-btn" data-index="${index}">Reservar</button>
+                      <button class="reserve-btn" data-index="${index}">Book Now</button>
                     </div>
                   </div>
                 `
@@ -164,7 +159,7 @@
                   const contact = document.getElementById("contact").value;
 
                   alert(
-                    `Reserva Confirmada! Nome: ${name}, E-mail: ${email}, Contato: ${contact}`
+                    `Booking confirmed! Name: ${name}, E-mail: ${email}, Contact: ${contact}`
                   );
 
                   modal.style.display = "none";
@@ -175,8 +170,8 @@
                   if (roomElement) {
                     const reserveButton =
                       roomElement.querySelector(".reserve-btn");
-                    reserveButton.textContent = "Reservado";
-                    reserveButton.style.backgroundColor = "red";
+                    reserveButton.textContent = "Not Available";
+                    reserveButton.style.backgroundColor = "#e55353";
                     reserveButton.disabled = true;
                   } else {
                     console.error(

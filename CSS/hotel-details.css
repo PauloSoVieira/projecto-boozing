@@ -136,11 +136,27 @@ body {
   background: white;
 }
 
+.room-info {
+  align-content: center;
+}
+
 .room-info h2 {
   color: #000;
   font-size: 24px;
-  margin: 0 0 15px 0;
 }
+
+.room-info i {
+  color: #bbbbbb;
+  font-size: 16px;
+}
+
+.room-info a {
+  color: #bbbbbb;
+  font-size: 14px;
+  margin-left: 2px;
+
+}
+
 
 .room-info ul {
   list-style: none;
@@ -167,7 +183,7 @@ body {
 .room-price span {
   font-size: 24px;
   font-weight: bold;
-  color: #8b4513;
+  color: #6A3217;
 }
 
 .room-price span::after {
@@ -244,10 +260,14 @@ body {
 
 #reservation-form label {
   display: block;
-  margin: 10px 0;
+  margin: 10px 0 0 0;
   font-size: 16px;
   font-weight: 600;
   color: #333;
+}
+
+#reservation-form {
+  margin-top: 20px;
 }
 
 #reservation-form input {
@@ -263,24 +283,44 @@ body {
 }
 
 #reservation-form input:focus {
-  border-color: #4caf50;
-  box-shadow: 0 0 10px rgba(76, 175, 80, 0.2);
+  border-color: #6A3217;
+}
+
+.room-price button {
+  text-align: center;
+  background: #6A3217;
+  color: white;
+  padding: 8px 34px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none !important;
+  border: none;
+  margin-top: 5px;
+  margin-left: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+
+}
+
+.room-price button:hover {
+  background: #7e3c1b;
 }
 
 #reservation-form button {
-  padding: 12px 20px;
-  background-color: #4caf50;
+  padding: 12px 24px;
+  background-color: #6A3217;
+  font-weight: 500;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   cursor: pointer;
-  font-size: 18px;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-top: 30px;
 }
 
 #reservation-form button:hover {
-  background-color: #45a049;
-  transform: translateY(-2px);
+  background-color: #7e3c1b;
 }
 
 .reserve-btn:disabled {
@@ -289,8 +329,7 @@ body {
 }
 
 #reservation-form input:focus {
-  border-color: #4caf50;
-  box-shadow: 0 0 10px rgba(76, 175, 80, 0.3);
+  border-color: #6A3217;
 }
 
 @media (max-width: 768px) {

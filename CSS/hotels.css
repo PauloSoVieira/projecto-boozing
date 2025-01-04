@@ -225,6 +225,7 @@ hr {
   border: none;
   margin-top: 50px;
   margin-left: 15px;
+  transition: background-color 0.3s ease;
 }
 
 .filters button:hover {
@@ -349,6 +350,7 @@ hr {
   font-weight: 500;
   text-decoration: none !important;
   margin-top: 5px; 
+  transition: background-color 0.3s ease;
 }
 
 .check-availability:hover {
