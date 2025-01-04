@@ -5,11 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Boozing - Hotel Booking</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap"> 
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="./CSS/index.css" />
     <link rel="stylesheet" href="./carrossel/style.css" />
   </head>
@@ -33,7 +29,7 @@
     </script>
 
     <div class="container">
-      <h2>Destinos Populares</h2>
+      <h2>Popular Destinations</h2>
       <div id="carousel-container"></div>
     </div>
 
@@ -50,7 +46,7 @@
             const cityCards = document.querySelectorAll(".city-card");
             const itemsToShow = 3;
             const totalItems = cityCards.length;
-            const itemWidth = cityCards[0].offsetWidth + 50;
+            const itemWidth = cityCards[0].offsetWidth + 62;
             let currentIndex = 0;
 
             function updateCarousel() {
@@ -88,7 +84,7 @@
         );
     </script>
 
-    <h2>Hotéis Mais Populares</h2>
+    <h2>Most Popular Hotels</h2>
     <div class="popular-hotels-cont">
       <button class="prev-hotels-btn">
         <i class="fa-solid fa-circle-chevron-left"></i>
@@ -97,29 +93,59 @@
         <div class="hotels-carousel-track-wrapper">
           <div class="hotels-carousel-track">
             <div class="hotel-card">
-              <img src="./IMG/main.jpg" alt="Radisson Blu Hotel" />
-              <h3>Radisson Blu Hotel</h3>
-              <p>From: 80€</p>
+              <div class="hotel-image" style="background-image: url('./IMG/Radisson.jpeg');">
+              </div>
+              <div class="hotel-details">
+                <h3>Radisson Blu Hotel</h3>
+                <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Lisboa</p>
+                </div>
+              </div>
             </div>
             <div class="hotel-card">
-              <img src="./IMG/main.jpg" alt="Marriott Hotel" />
-              <h3>Marriott Hotel</h3>
-              <p>From: 120€</p>
+              <div class="hotel-image" style="background-image: url('./IMG/Marriott.jpeg');">
+              </div>
+              <div class="hotel-details">
+                <h3>Marriott Hotel</h3>
+                <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Porto</p>
+                </div>
+              </div>
             </div>
             <div class="hotel-card">
-              <img src="./IMG/main.jpg" alt="Hilton Hotel" />
-              <h3>Hilton Hotel</h3>
-              <p>From: 100€</p>
+              <div class="hotel-image" style="background-image: url('./IMG/Hilton.avif');">
+              </div>
+              <div class="hotel-details">
+                <h3>Hilton Hotel</h3>
+                <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Albufeira</p>
+                </div>
+              </div>
             </div>
             <div class="hotel-card">
-              <img src="./IMG/main.jpg" alt="Ibis Hotel" />
-              <h3>Ibis Hotel</h3>
-              <p>From: 70€</p>
+              <div class="hotel-image" style="background-image: url('./IMG/Novotel.jpeg');">
+              </div>
+              <div class="hotel-details">
+                <h3>Novotel</h3>
+                <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Lisboa</p>
+                </div>
+              </div>
             </div>
             <div class="hotel-card">
-              <img src="./IMG/main.jpg" alt="Sheraton Hotel" />
-              <h3>Sheraton Hotel</h3>
-              <p>From: 150€</p>
+              <div class="hotel-image" style="background-image: url('./IMG/Sheraton.jpeg');">
+              </div>
+              <div class="hotel-details">
+                <h3>Sheraton</h3>
+                <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+                <p>Porto</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -144,7 +170,7 @@
         const nextHotelsBtn = document.querySelector(".next-hotels-btn");
         const hotelCards = document.querySelectorAll(".hotel-card");
         const itemsToShowHotels = 3;
-        const itemWidthHotels = hotelCards[0].offsetWidth + 20;
+        const itemWidthHotels = hotelCards[0].offsetWidth + 60;
         let currentIndexHotels = 0;
 
         function updateCarouselHotels() {

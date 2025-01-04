@@ -1,222 +1,830 @@
 [
   {
     "id": 1,
-    "name": "Radisson Blu Hotel",
-    "image": "./IMG/Radisson.jpeg",
+    "name": "Tivoli Avenida Liberdade",
+    "image": "./IMG/Tivoli/Tivoli.jpeg",
     "images": [
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg"
+      "./IMG/Tivoli/Tivoli1.jpeg",
+      "./IMG/Tivoli/Tivoli2.jpeg",
+      "./IMG/Tivoli/Tivoli3.jpeg",
+      "./IMG/Tivoli/Tivoli4.jpeg"
     ],
-    "rating": 4.5,
-    "stars": 4,
-    "reviews": 1300,
-    "location": "Porto",
-    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "rating": 4.6,
+    "stars": 5,
+    "reviews": 1800,
+    "location": "Lisboa",
+    "address": "Av. da Liberdade 185, 1269-050 Lisboa",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
       {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
-      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
-      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
-      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+      {"icon": "fa-solid fa-utensils", "text": "Gourmet Restaurant"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Infinity Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"}
     ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Superior", "maxPeople": 3, "pricePerNight": 120 },
-      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 190 },
-      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 220 }
+      { "type": "Classic", "maxPeople": 2, "pricePerNight": 150 },
+      { "type": "Deluxe", "maxPeople": 3, "pricePerNight": 220 },
+      { "type": "Executive Suite", "maxPeople": 2, "pricePerNight": 350 },
+      { "type": "Presidential Suite", "maxPeople": 4, "pricePerNight": 600 }
     ]
   },
   {
     "id": 2,
-    "name": "Hilton Garden Inn",
-    "image": "./IMG/Hilton.jpeg",
+    "name": "Hotel Lisboa Plaza",
+    "image": "./IMG/LisboaPlaza/LisboaPlaza.jpeg",
     "images": [
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg"
+      "./IMG/LisboaPlaza/LisboaPlaza1.jpeg",
+      "./IMG/LisboaPlaza/LisboaPlaza2.jpeg",
+      "./IMG/LisboaPlaza/LisboaPlaza3.jpeg",
+      "./IMG/LisboaPlaza/LisboaPlaza4.jpeg"
     ],
-    "rating": 4.2,
-    "stars": 3,
-    "reviews": 100,
-    "location": "Porto",
-    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "rating": 4.3,
+    "stars": 4,
+    "reviews": 1400,
+    "location": "Lisboa",
+    "address": "Tv. Salitre 7, 1269-066 Lisboa",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
       {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
-      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
+      {"icon": "fa-solid fa-laptop", "text": "Business Center"},
       {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
       {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 75 },
-      { "type": "Superior", "maxPeople": 3, "pricePerNight": 110 },
-      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 160 },
-      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 190 }
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 110 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 150 },
+      { "type": "Family Room", "maxPeople": 4, "pricePerNight": 180 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 250 }
     ]
   },
   {
     "id": 3,
-    "name": "InterContinental Hotel",
-    "image": "./IMG/Intercontinental.jpeg",
+    "name": "Hotel Mundial",
+    "image": "./IMG/Mundial/Mundial.jpeg",
     "images": [
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg"
+      "./IMG/Mundial/Mundial1.jpeg",
+      "./IMG/Mundial/Mundial2.jpeg",
+      "./IMG/Mundial/Mundial3.jpeg",
+      "./IMG/Mundial/Mundial4.jpeg"
     ],
-    "rating": 1.6,
-    "stars": 2,
-    "reviews": 1100,
-    "location": "Madeira",
-    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "rating": 4.4,
+    "stars": 4,
+    "reviews": 2000,
+    "location": "Lisboa",
+    "address": "Praça Martim Moniz 2, 1100-341 Lisboa",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-cocktail", "text": "Rooftop Bar"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"}
+    ],
+    "rooms": [
+      { "type": "Single", "maxPeople": 1, "pricePerNight": 90 },
+      { "type": "Standard Double", "maxPeople": 2, "pricePerNight": 130 },
+      { "type": "Superior Double", "maxPeople": 3, "pricePerNight": 170 },
+      { "type": "Suite", "maxPeople": 4, "pricePerNight": 280 }
+    ]
+  },
+    {
+    "id": 4,
+    "name": "Pestana Porto - A Brasileira",
+    "image": "./IMG/Pestana/Pestana.jpeg",
+    "images": [
+      "./IMG/Pestana/Pestana1.jpeg",
+      "./IMG/Pestana/Pestana2.jpeg",
+      "./IMG/Pestana/Pestana3.jpeg",
+      "./IMG/Pestana/Pestana4.jpeg"
+    ],
+    "rating": 4.7,
+    "stars": 5,
+    "reviews": 1200,
+    "location": "Porto",
+    "address": "Rua da Fábrica 27, 4050-245 Porto",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
       {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
       {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
-      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
-      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
-      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
-      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+      {"icon": "fa-solid fa-person-swimming", "text": "Indoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-wheelchair", "text": "Accessible Rooms"}
     ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Superior", "maxPeople": 3, "pricePerNight": 130 },
-      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 200 },
-      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 240 }
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 150 },
+      { "type": "Deluxe", "maxPeople": 3, "pricePerNight": 220 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 350 },
+      { "type": "Presidential Suite", "maxPeople": 4, "pricePerNight": 650 }
     ]
   },
   {
-    "id": 4,
-    "name": "Sheraton Grand",
-    "image": "./IMG/Sheraton.jpeg",
+    "id": 5,
+    "name": "Hotel Infante Sagres",
+    "image": "./IMG/InfanteSagres/InfanteSagres.jpeg",
     "images": [
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg"
+      "./IMG/InfanteSagres/InfanteSagres1.jpeg",
+      "./IMG/InfanteSagres/InfanteSagres2.jpeg",
+      "./IMG/InfanteSagres/InfanteSagres3.jpeg",
+      "./IMG/InfanteSagres/InfanteSagres4.jpeg"
     ],
-    "rating": 4.7,
-    "stars": 1,
-    "reviews": 1300,
-    "location": "Lisboa",
-    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "rating": 4.6,
+    "stars": 5,
+    "reviews": 1400,
+    "location": "Porto",
+    "address": "Praça de D. Filipa de Lencastre, 4050-259 Porto",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Fine Dining Restaurant"},
+      {"icon": "fa-solid fa-cocktail", "text": "Rooftop Bar"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Superior", "maxPeople": 2, "pricePerNight": 200 },
+      { "type": "Executive", "maxPeople": 3, "pricePerNight": 270 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 400 },
+      { "type": "Penthouse", "maxPeople": 4, "pricePerNight": 700 }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Eurostars Heroismo",
+    "image": "./IMG/EurostarsHeroismo/EurostarsHeroismo.jpeg",
+    "images": [
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo1.jpeg",
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo2.jpeg",
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo3.jpeg",
+      "./IMG/EurostarsHeroismo/EurostarsHeroismo4.jpeg"
+    ],
+    "rating": 4.2,
+    "stars": 4,
+    "reviews": 1000,
+    "location": "Porto",
+    "address": "Rua do Heroísmo 235, 4300-258 Porto",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
       {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
       {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
-      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
-      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+      {"icon": "fa-solid fa-person-swimming", "text": "Indoor Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 90 },
       { "type": "Superior", "maxPeople": 3, "pricePerNight": 130 },
       { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 200 },
-      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 230 }
+      { "type": "Suite", "maxPeople": 4, "pricePerNight": 350 }
     ]
   },
-  {
-    "id": 5,
-    "name": "Novotel City Centre",
-    "image": "./IMG/Novotel.jpeg",
+    {
+    "id": 7,
+    "name": "Hotel Algarve Ria",
+    "image": "./IMG/AlgarveRia/AlgarveRia.jpeg",
     "images": [
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg"
+      "./IMG/AlgarveRia/AlgarveRia1.jpeg",
+      "./IMG/AlgarveRia/AlgarveRia2.jpeg",
+      "./IMG/AlgarveRia/AlgarveRia3.jpeg",
+      "./IMG/AlgarveRia/AlgarveRia4.jpeg"
     ],
-    "rating": 3.5,
-    "stars": 5,
-    "reviews": 850,
-    "location": "Porto",
-    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "rating": 4.5,
+    "stars": 4,
+    "reviews": 800,
+    "location": "Albufeira",
+    "address": "Avenida da Liberdade 183, 8200-155 Albufeira",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
       {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
       {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
-      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
-      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"}
     ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 80 },
-      { "type": "Superior", "maxPeople": 3, "pricePerNight": 115 },
-      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 170 },
-      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 210 }
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 120 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 160 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 220 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 350 }
     ]
   },
   {
-    "id": 6,
-    "name": "Marriott Downtown",
-    "image": "./IMG/Marriott.jpeg",
+    "id": 8,
+    "name": "Grand Muthu Forte do Vale",
+    "image": "./IMG/ForteDoVale/ForteDoVale.jpeg",
     "images": [
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg"
+      "./IMG/ForteDoVale/ForteDoVale1.jpeg",
+      "./IMG/ForteDoVale/ForteDoVale2.jpeg",
+      "./IMG/ForteDoVale/ForteDoVale3.jpeg",
+      "./IMG/ForteDoVale/ForteDoVale4.jpeg"
+    ],
+    "rating": 4.3,
+    "stars": 4,
+    "reviews": 1100,
+    "location": "Albufeira",
+    "address": "Rua da Torre Velha, 8200-213 Albufeira",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Indoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+    ],
+    "rooms": [
+      { "type": "Studio", "maxPeople": 2, "pricePerNight": 130 },
+      { "type": "1-Bedroom Apartment", "maxPeople": 3, "pricePerNight": 180 },
+      { "type": "2-Bedroom Apartment", "maxPeople": 4, "pricePerNight": 240 },
+      { "type": "Deluxe Suite", "maxPeople": 4, "pricePerNight": 350 }
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Epic Sana Algarve Hotel",
+    "image": "./IMG/EpicSana/EpicSana.jpeg",
+    "images": [
+      "./IMG/EpicSana/EpicSana1.jpeg",
+      "./IMG/EpicSana/EpicSana2.jpeg",
+      "./IMG/EpicSana/EpicSana3.jpeg",
+      "./IMG/EpicSana/EpicSana4.jpeg"
+    ],
+    "rating": 4.8,
+    "stars": 5,
+    "reviews": 2000,
+    "location": "Albufeira",
+    "address": "Praia da Falesia, 8200-593 Albufeira",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Gourmet Restaurant"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Infinity Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Luxury Spa"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Classic Room", "maxPeople": 2, "pricePerNight": 200 },
+      { "type": "Sea View Room", "maxPeople": 3, "pricePerNight": 280 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 400 },
+      { "type": "Presidential Suite", "maxPeople": 4, "pricePerNight": 800 }
+    ]
+  },
+    {
+    "id": 10,
+    "name": "M'AR De AR Muralhas",
+    "image": "./IMG/MARDeAR/MARDeAR.jpeg",
+    "images": [
+      "./IMG/MARDeAR/MARDeAR1.jpeg",
+      "./IMG/MARDeAR/MARDeAR2.jpeg",
+      "./IMG/MARDeAR/MARDeAR3.jpeg",
+      "./IMG/MARDeAR/MARDeAR4.jpeg"
+    ],
+    "rating": 4.5,
+    "stars": 4,
+    "reviews": 750,
+    "location": "Évora",
+    "address": "Rua de Dom Augusto 1, 7000-508 Évora",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-wheelchair", "text": "Accessible Rooms"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 120 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 180 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 250 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 400 }
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Évora Hotel",
+    "image": "./IMG/EvoraHotel/EvoraHotel.jpeg",
+    "images": [
+      "./IMG/EvoraHotel/EvoraHotel1.jpeg",
+      "./IMG/EvoraHotel/EvoraHotel2.jpeg",
+      "./IMG/EvoraHotel/EvoraHotel3.jpeg",
+      "./IMG/EvoraHotel/EvoraHotel4.jpeg"
+    ],
+    "rating": 4.2,
+    "stars": 4,
+    "reviews": 900,
+    "location": "Évora",
+    "address": "Avenida Túlio Espanca, 7000-804 Évora",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 100 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 140 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 210 },
+      { "type": "Suite", "maxPeople": 4, "pricePerNight": 320 }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Pousada Convento de Évora",
+    "image": "./IMG/PousadaConvento/PousadaConvento.jpeg",
+    "images": [
+      "./IMG/PousadaConvento/PousadaConvento1.jpeg",
+      "./IMG/PousadaConvento/PousadaConvento2.jpeg",
+      "./IMG/PousadaConvento/PousadaConvento3.jpeg",
+      "./IMG/PousadaConvento/PousadaConvento4.jpeg"
+    ],
+    "rating": 4.6,
+    "stars": 5,
+    "reviews": 1100,
+    "location": "Évora",
+    "address": "Largo do Conde de Vila Flor, 7000-804 Évora",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Fine Dining Restaurant"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 160 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 230 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 350 },
+      { "type": "Royal Suite", "maxPeople": 4, "pricePerNight": 600 }
+    ]
+  },
+    {
+    "id": 13,
+    "name": "Hotel Mercure Figueira da Foz",
+    "image": "./IMG/Mercure/MercureFigueira.jpeg",
+    "images": [
+      "./IMG/Mercure/MercureFigueira1.jpeg",
+      "./IMG/Mercure/MercureFigueira2.jpeg",
+      "./IMG/Mercure/MercureFigueira3.jpeg",
+      "./IMG/Mercure/MercureFigueira4.jpeg"
+    ],
+    "rating": 4.4,
+    "stars": 4,
+    "reviews": 650,
+    "location": "Figueira da Foz",
+    "address": "Avenida 25 de Abril, 3080-086 Figueira da Foz",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Indoor Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 110 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 150 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 210 },
+      { "type": "Suite", "maxPeople": 4, "pricePerNight": 320 }
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Hotel Baía",
+    "image": "./IMG/Baia/BaiaFigueira.jpeg",
+    "images": [
+      "./IMG/Baia/BaiaFigueira1.jpeg",
+      "./IMG/Baia/BaiaFigueira2.jpeg",
+      "./IMG/Baia/BaiaFigueira3.jpeg",
+      "./IMG/Baia/BaiaFigueira4.jpeg"
+    ],
+    "rating": 4.2,
+    "stars": 4,
+    "reviews": 800,
+    "location": "Figueira da Foz",
+    "address": "Avenida do Brasil, 3080-086 Figueira da Foz",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 90 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 130 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 180 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 250 }
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Sweet Atlantic Hotel & Spa",
+    "image": "./IMG/SweetAtlantic/SweetAtlantic.jpeg",
+    "images": [
+      "./IMG/SweetAtlantic/SweetAtlantic1.jpeg",
+      "./IMG/SweetAtlantic/SweetAtlantic2.jpeg",
+      "./IMG/SweetAtlantic/SweetAtlantic3.jpeg",
+      "./IMG/SweetAtlantic/SweetAtlantic4.jpeg"
+    ],
+    "rating": 4.7,
+    "stars": 5,
+    "reviews": 1000,
+    "location": "Figueira da Foz",
+    "address": "Avenida do Brasil, 3080-086 Figueira da Foz",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Gourmet Restaurant"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Luxury Spa"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 150 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 210 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 300 },
+      { "type": "Presidential Suite", "maxPeople": 4, "pricePerNight": 500 }
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Belmond Reid's Palace",
+    "image": "./IMG/ReidsPalace/ReidsPalace.jpeg",
+    "images": [
+      "./IMG/ReidsPalace/ReidsPalace1.jpeg",
+      "./IMG/ReidsPalace/ReidsPalace2.jpeg",
+      "./IMG/ReidsPalace/ReidsPalace3.jpeg",
+      "./IMG/ReidsPalace/ReidsPalace4.jpeg"
+    ],
+    "rating": 4.9,
+    "stars": 5,
+    "reviews": 1200,
+    "location": "Madeira",
+    "address": "Estrada Monumental 139, 9000-098 Funchal, Madeira",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Gourmet Restaurant"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Luxury Spa"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Classic Room", "maxPeople": 2, "pricePerNight": 400 },
+      { "type": "Ocean View Room", "maxPeople": 3, "pricePerNight": 600 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 800 },
+      { "type": "Presidential Suite", "maxPeople": 4, "pricePerNight": 1500 }
+    ]
+  },
+  {
+    "id": 17,
+    "name": "The Cliff Bay",
+    "image": "./IMG/CliffBay/CliffBay.jpeg",
+    "images": [
+      "./IMG/CliffBay/CliffBay1.jpeg",
+      "./IMG/CliffBay/CliffBay2.jpeg",
+      "./IMG/CliffBay/CliffBay3.jpeg",
+      "./IMG/CliffBay/CliffBay4.jpeg"
+    ],
+    "rating": 4.7,
+    "stars": 5,
+    "reviews": 950,
+    "location": "Madeira",
+    "address": "Estrada Monumental 147, 9000-098 Funchal, Madeira",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Infinity Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 220 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 280 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 350 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 500 }
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Pestana CR7 Funchal",
+    "image": "./IMG/PestanaCR7/PestanaCR7.jpeg",
+    "images": [
+      "./IMG/PestanaCR7/PestanaCR71.jpeg",
+      "./IMG/PestanaCR7/PestanaCR72.jpeg",
+      "./IMG/PestanaCR7/PestanaCR73.jpeg",
+      "./IMG/PestanaCR7/PestanaCR74.jpeg"
     ],
     "rating": 4.3,
     "stars": 4,
     "reviews": 1500,
     "location": "Madeira",
-    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "address": "Avenida Sá Carneiro 28, 9000-017 Funchal, Madeira",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
       {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
       {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
-      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Indoor Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"},
       {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
     ],
     "rooms": [
-      { "type": "Standard", "maxPeople": 2, "pricePerNight": 120 },
-      { "type": "Superior", "maxPeople": 3, "pricePerNight": 180 },
-      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 280 },
-      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 350 }
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 180 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 230 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 300 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 450 }
     ]
   },
   {
-    "id": 7,
-    "name": "Holiday Inn Express",
-    "image": "./IMG/Holiday.jpeg",
+    "id": 19,
+    "name": "Hotel Miramar",
+    "image": "./IMG/Miramar/MiramarNazaré.jpeg",
     "images": [
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg",
-      "./IMG/Radisson.jpeg"
+      "./IMG/Miramar/MiramarNazaré1.jpeg",
+      "./IMG/Miramar/MiramarNazaré2.jpeg",
+      "./IMG/Miramar/MiramarNazaré3.jpeg",
+      "./IMG/Miramar/MiramarNazaré4.jpeg"
     ],
-    "rating": 2.1,
+    "rating": 4.6,
     "stars": 4,
-    "reviews": 1100,
-    "location": "Lisboa",
-    "address" : "Rua de Silva Tapada 115, 4200-501, Porto",
+    "reviews": 850,
+    "location": "Nazaré",
+    "address": "Avenida da República, 2450-101 Nazaré",
     "amenities": [
       {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
       {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
       {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
       {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
-      {"icon": "fa-solid fa-person-swimming", "text": "Swimming Pool"},
-      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"},
-      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"}
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 100 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 150 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 220 },
+      { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 300 }
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Hotel Praia",
+    "image": "./IMG/Praia/PraiaNazaré.jpeg",
+    "images": [
+      "./IMG/Praia/PraiaNazaré1.jpeg",
+      "./IMG/Praia/PraiaNazaré2.jpeg",
+      "./IMG/Praia/PraiaNazaré3.jpeg",
+      "./IMG/Praia/PraiaNazaré4.jpeg"
+    ],
+    "rating": 4.3,
+    "stars": 4,
+    "reviews": 950,
+    "location": "Nazaré",
+    "address": "Avenida da República 25, 2450-101 Nazaré",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Indoor Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"}
     ],
     "rooms": [
       { "type": "Standard", "maxPeople": 2, "pricePerNight": 90 },
       { "type": "Superior", "maxPeople": 3, "pricePerNight": 130 },
       { "type": "Junior Suite", "maxPeople": 2, "pricePerNight": 210 },
-      { "type": "Deluxe Twin", "maxPeople": 4, "pricePerNight": 260 }
+      { "type": "Suite", "maxPeople": 4, "pricePerNight": 280 }
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Hotel Maré",
+    "image": "./IMG/Mare/MareNazaré.jpeg",
+    "images": [
+      "./IMG/Mare/MareNazaré1.jpeg",
+      "./IMG/Mare/MareNazaré2.jpeg",
+      "./IMG/Mare/MareNazaré3.jpeg",
+      "./IMG/Mare/MareNazaré4.jpeg"
+    ],
+    "rating": 4.5,
+    "stars": 4,
+    "reviews": 1200,
+    "location": "Nazaré",
+    "address": "Rua da Ilha 1, 2450-125 Nazaré",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 110 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 160 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 210 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 280 }
+    ]
+  },
+    {
+    "id": 22,
+    "name": "Hotel Algarve Casino",
+    "image": "./IMG/AlgarveCasino/AlgarveCasino.jpeg",
+    "images": [
+      "./IMG/AlgarveCasino/AlgarveCasino1.jpeg",
+      "./IMG/AlgarveCasino/AlgarveCasino2.jpeg",
+      "./IMG/AlgarveCasino/AlgarveCasino3.jpeg",
+      "./IMG/AlgarveCasino/AlgarveCasino4.jpeg"
+    ],
+    "rating": 4.6,
+    "stars": 5,
+    "reviews": 1120,
+    "location": "Portimão",
+    "address": "Avenida Tomás Cabreira, 8500-802 Portimão",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 150 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 200 },
+      { "type": "Deluxe", "maxPeople": 4, "pricePerNight": 300 },
+      { "type": "Suite", "maxPeople": 2, "pricePerNight": 400 }
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Tivoli Marina Portimão",
+    "image": "./IMG/TivoliMarina/TivoliMarina.jpeg",
+    "images": [
+      "./IMG/TivoliMarina/TivoliMarina1.jpeg",
+      "./IMG/TivoliMarina/TivoliMarina2.jpeg",
+      "./IMG/TivoliMarina/TivoliMarina3.jpeg",
+      "./IMG/TivoliMarina/TivoliMarina4.jpeg"
+    ],
+    "rating": 4.5,
+    "stars": 4,
+    "reviews": 870,
+    "location": "Portimão",
+    "address": "Marina de Portimão, 8500-843 Portimão",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Infinity Pool"},
+      {"icon": "fa-solid fa-paw", "text": "Pets Allowed"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 120 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 170 },
+      { "type": "Family Suite", "maxPeople": 4, "pricePerNight": 250 },
+      { "type": "Luxury Suite", "maxPeople": 2, "pricePerNight": 350 }
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Jupiter Algarve Hotel",
+    "image": "./IMG/JupiterAlgarve/JupiterAlgarve.jpeg",
+    "images": [
+      "./IMG/JupiterAlgarve/JupiterAlgarve1.jpeg",
+      "./IMG/JupiterAlgarve/JupiterAlgarve2.jpeg",
+      "./IMG/JupiterAlgarve/JupiterAlgarve3.jpeg",
+      "./IMG/JupiterAlgarve/JupiterAlgarve4.jpeg"
+    ],
+    "rating": 4.4,
+    "stars": 4,
+    "reviews": 920,
+    "location": "Portimão",
+    "address": "Avenida Tomás Cabreira 92, 8500-802 Portimão",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Indoor Pool"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 100 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 150 },
+      { "type": "Junior Suite", "maxPeople": 4, "pricePerNight": 220 },
+      { "type": "Presidential Suite", "maxPeople": 2, "pricePerNight": 350 }
+    ]
+  },
+    {
+    "id": 25,
+    "name": "Tivoli Palácio de Seteais",
+    "image": "./IMG/Seteais/TivoliSeteais.jpeg",
+    "images": [
+      "./IMG/Seteais/TivoliSeteais1.jpeg",
+      "./IMG/Seteais/TivoliSeteais2.jpeg",
+      "./IMG/Seteais/TivoliSeteais3.jpeg",
+      "./IMG/Seteais/TivoliSeteais4.jpeg"
+    ],
+    "rating": 4.8,
+    "stars": 5,
+    "reviews": 950,
+    "location": "Sintra",
+    "address": "Rua Barbosa du Bocage 8, 2710-517 Sintra",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Fine Dining Restaurant"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-spa", "text": "Spa & Wellness Center"},
+      {"icon": "fa-solid fa-dumbbell", "text": "Fitness Center"}
+    ],
+    "rooms": [
+      { "type": "Deluxe Room", "maxPeople": 2, "pricePerNight": 350 },
+      { "type": "Junior Suite", "maxPeople": 3, "pricePerNight": 450 },
+      { "type": "Royal Suite", "maxPeople": 4, "pricePerNight": 600 }
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Lawrence's Hotel",
+    "image": "./IMG/Lawrences/Lawrences.jpeg",
+    "images": [
+      "./IMG/Lawrences/Lawrences1.jpeg",
+      "./IMG/Lawrences/Lawrences2.jpeg",
+      "./IMG/Lawrences/Lawrences3.jpeg",
+      "./IMG/Lawrences/Lawrences4.jpeg"
+    ],
+    "rating": 4.6,
+    "stars": 4,
+    "reviews": 730,
+    "location": "Sintra",
+    "address": "Rua Consiglieri Pedroso 38-40, 2710-550 Sintra",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-book", "text": "Library"},
+      {"icon": "fa-solid fa-ban-smoking", "text": "No Smoking Rooms"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 180 },
+      { "type": "Superior", "maxPeople": 2, "pricePerNight": 250 },
+      { "type": "Suite", "maxPeople": 3, "pricePerNight": 350 }
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Sintra Boutique Hotel",
+    "image": "./IMG/SintraBoutique/SintraBoutique.jpeg",
+    "images": [
+      "./IMG/SintraBoutique/SintraBoutique1.jpeg",
+      "./IMG/SintraBoutique/SintraBoutique2.jpeg",
+      "./IMG/SintraBoutique/SintraBoutique3.jpeg",
+      "./IMG/SintraBoutique/SintraBoutique4.jpeg"
+    ],
+    "rating": 4.7,
+    "stars": 4,
+    "reviews": 840,
+    "location": "Sintra",
+    "address": "Rua Visconde de Monserrate 48, 2710-591 Sintra",
+    "amenities": [
+      {"icon": "fa-solid fa-square-parking", "text": "Private Park"},
+      {"icon": "fa-solid fa-wifi", "text": "Free WiFi"},
+      {"icon": "fa-solid fa-mug-saucer", "text": "Breakfast Included"},
+      {"icon": "fa-solid fa-utensils", "text": "Restaurant Available"},
+      {"icon": "fa-solid fa-person-swimming", "text": "Outdoor Pool"},
+      {"icon": "fa-solid fa-shuttle-van", "text": "Airport Shuttle"}
+    ],
+    "rooms": [
+      { "type": "Standard", "maxPeople": 2, "pricePerNight": 150 },
+      { "type": "Superior", "maxPeople": 3, "pricePerNight": 220 },
+      { "type": "Suite", "maxPeople": 4, "pricePerNight": 320 }
     ]
   }
 ]

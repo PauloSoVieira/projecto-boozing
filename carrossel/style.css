@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80%;
+  width: 67%;
   margin: auto;
 }
 .carousel {
@@ -10,7 +10,7 @@
   align-items: center;
   gap: 10px;
   overflow: hidden;
-  width: 90%;
+  width: 1155px;
   margin: 10px;
 }
 

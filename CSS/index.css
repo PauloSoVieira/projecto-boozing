@@ -15,6 +15,9 @@ body {
   background-color: #f9f9f9;
   overflow-x: hidden;
 }
+.container{
+  margin: 40px 0 60px 0;
+}
 
 .container-bottom {
   width: 90%;
@@ -67,26 +70,30 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 67%;
+  margin: auto;
+  margin-bottom: 80px;
+
 }
 
 .hotels-carousel {
   display: flex;
   align-items: center;
+  gap: 10px;
   overflow: hidden;
-  width: 70%;
-  margin: 10px -10px;
+  width: 1155px;
+  margin: 10px;
 }
 
 .hotels-carousel-track-wrapper {
   overflow: hidden;
-  width: 100%;
 }
 
 .hotels-carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  gap: 20px;
+  gap: 62px;
+  padding: 10px;
 }
 
 .hotel-card {
@@ -95,46 +102,51 @@ h2 {
   border-radius: 10px;
   text-align: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  padding: 15px;
 }
 
-.hotel-card img {
-  width: 350px;
-  height: 250px;
-  border-radius: 10px;
-  margin-bottom: 10px;
+.hotel-image {
+  width: 335px;
+  height: 270px;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 15px 15px 0 0 ;
 }
 
-.hotel-card h3 {
-  margin: 10px 0;
-  font-size: 18px;
-  font-weight: bold;
+
+.hotel-details{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 30px;
+  gap: 5px;
 }
 
-.hotel-card p {
+.location p{
   font-size: 14px;
-  color: #555;
+  color: #757575;
 }
 
-.prev-hotels-btn,
-.next-hotels-btn {
-  background-color: transparent;
+.location i{
+  font-size: 14px;
   color: #757575;
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-  font-size: 30px;
-  height: 50px;
-  width: 50px;
+}
+
+.hotel-details h3 {
+  font-size: 20px;
+  color: #333;
+}
+
+.hotel-details {
+  height: 90px;
+}
+
+.location {
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-
-.prev-hotels-btn:disabled,
-.next-hotels-btn:disabled {
-  color: #aaa;
-  cursor: not-allowed;
+  gap: 10px;
 }
 
 @media (max-width: 390px) {
