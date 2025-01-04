@@ -7,11 +7,14 @@
   user-select: none;
 }
 
-input[type="checkbox"] {
-  display: none;
+.stars-container {
+  display: flex; 
+  align-items: center; 
+  gap: 2px; 
+  margin:14px 0 22px 0;
 }
 
-.container-checkbox-stars {
+.stars-container label{
   color: #000;
   width: fit-content;
   height: fit-content;
@@ -21,31 +24,33 @@ input[type="checkbox"] {
   cursor: pointer;
   margin-left: 5px !important;
   margin-bottom: 0px !important;
+  transition: border-color 0.3s ease;
 }
 
-.container-checkbox-stars div {
+.stars-container input[type="checkbox"] {
+  display: none;
+}
+
+.stars-container input[type="checkbox"]:checked + .star-checkbox {
+  border-color: #6A3217;
+}
+
+.stars-container .star-checkbox:hover {
+  border-color: #acacac;
+}
+
+.stars-container div {
   display: flex;
   font-size: 12px;
   font-weight: 600;
   align-items: center;
   gap: 5px;
-  width: -fit-content;
   padding: 3px 8px 3px 8px;
 }
 
-.container-checkbox-stars div i{
+.stars-container i{
   font-size: 12px;
   color: #F5E31A;
-}
-
-/* Estilo ao passar o mouse */
-.container-checkbox-stars:hover {
-  border: 2px solid #6A3217;
-}
-
-input[type="checkbox"]:checked ~ .container-checkbox-stars { 
-  border: 2px solid red;
-  color: green;
 }
 
 * {
@@ -61,9 +66,9 @@ body {
 }
 
 hr {
-  border: none; /* Remove a borda padrão */
-  height: 1px; /* Define a altura */
-  background-color: #EFEFEF; /* Define a cor */
+  border: none; 
+  height: 1px; 
+  background-color: #EFEFEF;
 }
 
 .main-content {
@@ -72,7 +77,6 @@ hr {
   max-width: 1200px;
 }
 
-/* Customize the label (the container) */
 .container-checkbox {
   position: relative;
   padding-left: 25px;
@@ -85,7 +89,6 @@ hr {
   width: 20px;
 }
 
-/* Hide the browser's default checkbox */
 .container-checkbox input {
   position: absolute;
   opacity: 0;
@@ -98,7 +101,6 @@ hr {
   white-space: nowrap;
 }
 
-/* Create a custom checkbox */
 .checkmark {
   position: absolute;
   top: 4px;
@@ -110,29 +112,24 @@ hr {
   border-radius: 2px;
 }
 
-/* On mouse-over, add a grey background color */
 .container-checkbox:hover input ~ .checkmark {
   border: 1px solid #7e3c1b;
 }
 
-/* When the checkbox is checked, add background */
 .container-checkbox input:checked ~ .checkmark {
   background-color: #fff;
 }
 
-/* Create the checkmark/indicator (hidden when not checked) */
 .checkmark:after {
   content: "";
   position: absolute;
   display: none;
 }
 
-/* Show the checkmark when checked */
 .container-checkbox input:checked ~ .checkmark:after {
   display: block;
 }
 
-/* Style the checkmark/indicator */
 .container-checkbox .checkmark:after {
   left: 4px;
   top: 1px;
