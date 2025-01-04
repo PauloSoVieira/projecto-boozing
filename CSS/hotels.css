@@ -1,3 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", serif;  
+  text-decoration: none;
+}
+
+a { 
+  color: inherit; 
+} 
+
+a:hover { 
+    text-decoration: underline; 
+}
+
+body {
+  line-height: 1.6;
+  color: #333;
+}
+
+hr {
+  border: none; 
+  height: 1px; 
+  background-color: #EFEFEF;
+}
+
 .unselectable {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -53,22 +80,18 @@
   color: #F5E31A;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Montserrat", serif;  
+.rating-checkbox{
+  font-size: 12px;
+  font-weight: 600;
+  padding: 3px 8px 3px 8px;
 }
 
-body {
-  line-height: 1.6;
-  color: #333;
+.stars-container input[type="checkbox"]:checked + .rating-checkbox {
+  border-color: #6A3217;
 }
 
-hr {
-  border: none; 
-  height: 1px; 
-  background-color: #EFEFEF;
+.stars-container .rating-checkbox:hover {
+  border-color: #acacac;
 }
 
 .main-content {
@@ -281,14 +304,14 @@ hr {
   gap: 10px;
 }
 
-.from-price a {
+.from-price .price-from {
   font-size: 12px;
   font-weight: 400;
   color: #bdbdbd;
   margin-top: 8px;
 }
 
-.from-price p{
+.from-price .hotelprice{
   color: #6A3217;
   font-weight: 700;
   font-size: 26px;
@@ -303,8 +326,12 @@ hr {
   cursor: pointer;
   font-size: 14px;
   font-weight: 500;
-  text-decoration: none;
-  margin-top: 5px;
+  text-decoration: none !important;
+  margin-top: 5px; 
+}
+
+.check-availability:hover {
+  background-color: #7e3c1b;
 }
 
 @media (max-width: 390px) {

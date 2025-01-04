@@ -11,6 +11,7 @@
   <body>
     <div id="header"></div>
     <script>
+
       fetch("./header_hotels.html")
         .then((response) => response.text())
         .then((data) => {
@@ -104,6 +105,28 @@
 
         <hr class="dashed">
 
+        <summary>Rating</summary>
+
+        <div class="stars-container">
+
+          <input type="checkbox" name="rating" id="rating1" value="0-1">
+          <label for="rating1" class="rating-checkbox unselectable">0 - 1</label>
+
+          <input type="checkbox" name="rating" id="rating2" value="1-2">
+          <label for="rating2" class="rating-checkbox unselectable">1 - 2</label>
+
+          <input type="checkbox" name="rating" id="rating3" value="2-3">
+          <label for="rating3" class="rating-checkbox unselectable">2 - 3</label>
+
+          <input type="checkbox" name="rating" id="rating4" value="3-4">
+          <label for="rating4" class="rating-checkbox unselectable">3 - 4</label>
+
+          <input type="checkbox" name="rating" id="rating5" value="4-5">
+          <label for="rating5" class="rating-checkbox unselectable">4 - 5</label>
+      </div>
+
+        <hr class="dashed">
+
         <summary>Location</summary>
 
         <label class="container-checkbox">
@@ -167,6 +190,10 @@
         const starCheckboxes = document.querySelectorAll(
           "input[name='stars']"
         );
+
+        const ratingCheckboxes = document.querySelectorAll(
+          "input[name='rating']"
+        );
             
         const locationCheckboxes = document.querySelectorAll(
           "input[name='location']"
@@ -198,7 +225,7 @@
                       <div class="hotel-details">
                         <div class="hotel-info">
                           <div class="hotel-name">
-                            <h3>${hotel.name}</h3>
+                            <h3><a href="./hotel-details.html?id=${hotel.id}">${hotel.name}</a></h3>
                             <div class="stars">${generateStars(hotel.stars)}</div>
                           </div> 
                           <div class="hotel-rating">
@@ -212,7 +239,7 @@
                         </div>  
                         <div class="hotel-price">
                           <div class="from-price">
-                            <a class="price-from">From: </a> 
+                            <p class="price-from">From: </p>
                             <p class="hotelprice">${minPricePerNight}€</p>
                           </div>
                           <a href="./hotel-details.html?id=${hotel.id}" class="check-availability">Check Availability <i class="fa-solid fa-angle-right"></i></a>
@@ -240,6 +267,10 @@
             .filter((checkbox) => checkbox.checked)
             .map((checkbox) => Number(checkbox.value));
 
+          const selectedRatingRanges = Array.from(ratingCheckboxes)
+            .filter((checkbox) => checkbox.checked)
+            .map((checkbox) => checkbox.value);
+
           const selectedLocations = Array.from(locationCheckboxes)
             .filter((checkbox) => checkbox.checked)
             .map((checkbox) => checkbox.value);
@@ -251,19 +282,29 @@
                 const priceInRange =
                   selectedPriceRanges.length === 0 ||
                   selectedPriceRanges.some((range) => {
+                    const minPricePerNight = hotel.rooms.reduce(
+                    (min, room) => (room.pricePerNight < min ? room.pricePerNight : min),
+                    Infinity);
                     const [min, max] = range.split("-").map(Number);
-                    return hotel.price >= min && hotel.price <= max;
+                    return minPricePerNight >= min && minPricePerNight <= max;
                   });
 
                 const starsMatch =
                   selectedStars.length === 0 ||
                   selectedStars.includes(hotel.stars);
-
-                const locationMatch =
+                
+                  const ratingInRange =
+                  selectedRatingRanges.length === 0 ||
+                  selectedRatingRanges.some((range) => {
+                    const [min, max] = range.split("-").map(Number);
+                    return hotel.rating >= min && hotel.rating <= max;
+                  });
+                
+                  const locationMatch =
                   selectedLocations.length === 0 ||
                   selectedLocations.includes(hotel.location);
 
-                return priceInRange && starsMatch && locationMatch;
+                return priceInRange && starsMatch && ratingInRange && locationMatch;
               });
 
               hotelsContainer.innerHTML = filteredHotels
@@ -289,7 +330,7 @@
                       <div class="hotel-details">
                         <div class="hotel-info">
                           <div class="hotel-name">
-                            <h3>${hotel.name}</h3>
+                            <h3><a href="./hotel-details.html?id=${hotel.id}">${hotel.name}</a></h3>
                             <div class="stars">${generateStars(hotel.stars)}</div>
                           </div> 
                           <div class="hotel-rating">
@@ -324,6 +365,10 @@
         });
 
         starCheckboxes.forEach((checkbox) => {
+          checkbox.addEventListener("change", updateHotels);
+        });
+
+        ratingCheckboxes.forEach((checkbox) => {
           checkbox.addEventListener("change", updateHotels);
         });
 
